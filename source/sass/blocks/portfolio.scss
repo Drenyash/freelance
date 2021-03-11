@@ -1,0 +1,14 @@
+.portfolio {
+  margin-bottom: 45px;
+}
+
+.portfolio__image {
+  max-width: 200px;
+  max-height: 145px;
+}
+
+.portfolio__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  grid-column-gap: 28px;
+}

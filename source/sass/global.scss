@@ -66,6 +66,10 @@ textarea {
 	border-radius: 10px;
 }
 
+.element--full {
+  display: block;
+}
+
 .btn {
 	display: block;
 	padding: 19.5px 30px;
@@ -130,4 +134,11 @@ textarea {
 	&:last-child {
 		margin-bottom: 0;
 	}
+}
+
+.section__head {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 700;
+	margin-bottom: 15px;
 }

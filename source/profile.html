@@ -73,9 +73,9 @@
     </div>
   </header>
   <main class="main">
-    <section class="profile">
+    <section class="profile profile--element">
       <div class="container container--profile">
-        <ul class="breadcrumbs">
+        <ul class="profile__breadcrumbs breadcrumbs">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">Доска объявлений</a>
           </li>
@@ -86,6 +86,104 @@
             <a class="breadcrumbs__link">Александра Викторова</a>
           </li>
         </ul>
+        <div class="profile__wrapper element element--full">
+          <div class="profile__bg"></div>
+          <div class="profile__box">
+            <header class="profile__header">
+              <div class="profile__picture-box">
+                <img class="profile__avatar" src="img/resume - 1.jpg" alt="">
+                <a class="btn profile__btn" href="#">Написать</a>
+              </div>
+              <h2 class="profile__name">Александра Викторова</h2>
+              <p class="profile__place">Россия, Москва</p>
+              <ul class="profile__stats stats">
+                <li class="stats__item">
+                  <h3 class="stats__title">Опыт</h3>
+                  <p class="stats__description">Более 1 года</p>
+                </li>
+                <li class="stats__item">
+                  <h3 class="stats__title">Уровень навыков</h3>
+                  <p class="stats__description">Senior</p>
+                </li>
+                <li class="stats__item">
+                  <h3 class="stats__title">Режим работы</h3>
+                  <p class="stats__description">Полный день</p>
+                </li>
+                <li class="stats__item">
+                  <h3 class="stats__title">Ожидаемая зарплата</h3>
+                  <p class="stats__description">$ 1150.0 / в месяц</p>
+                </li>
+              </ul>
+            </header>
+            <section class="portfolio slider">
+              <h3 class="section__head">Портфолио</h3>
+              <div class="portfolio__list">
+                <div class="portfolio__item">
+                  <img class="portfolio__image" src="img/portfolio_1.jpg" alt="">
+                </div>
+                <div class="portfolio__item">
+                  <img class="portfolio__image" src="img/portfolio_2.jpg" alt="">
+                </div>
+                <div class="portfolio__item">
+                  <img class="portfolio__image" src="img/portfolio_3.jpg" alt="">
+                </div>
+                <div class="portfolio__item">
+                  <img class="portfolio__image" src="img/portfolio_4.jpg" alt="">
+                </div>
+              </div>
+            </section>
+            <section class="profile-about">
+              <h3 class="section__head">Обо мне</h3>
+              <p class="about__text">
+                Меня зовут Александра и я веб-дизайнер из Москвы. Мне чуть больше 35 лет, замужем на прекрасном человеке и у нас чудесная дочка.
+                А еще боюсь высоты и все проспать. Знакомые предлагают написать еще книгу, о том, как я все успеваю, мне же кажется иначе — многое сделал бы еще сегодня, а уже стемнело. Почти всегда штормит от неграмотных, но и сам периодически допускаю ляпы, за которые стыдно. Как-то совсем неочень отношусь к ребятам, которым лень поздороваться, но еще больше не нравится приветствие «Доброго времени суток». В дизайне меня совсем не радует популярный до сих пор у многих других дизайнеров скевоморфизм, и вместо него я вам сделаю клевый современный дизайн.
+              </p>
+            </section>
+            <section class="profile-skills">
+              <h3 class="section__head">Профессиональные навыки</h3>
+                <ul class="profile-skills__list">
+                  <li class="profile-skills__item">3 года работы в среде маркетинга</li>
+                  <li class="profile-skills__item">Коммуникабельность</li>
+                  <li class="profile-skills__item">Пунктуальная</li>
+                  <li class="profile-skills__item">Менее чем за год доросла до уровня сеньора</li>
+                </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews profile--element">
+      <div class="container container--profile">
+        <div class="reviews__wrapper element element--full">
+          <h3 class="section__head">Отзывы</h3>
+          <div class="reviews__list">
+            <div class="reviews__item element element--full">
+              <div class="best__box best__box--reviews">
+                <img class="best__image element" src="img/best-freelancer.jpg" alt="Фото фрилансера «»">
+                <div class="best__info">
+                  <h3 class="best__title">Регина шпик</h3>
+                  <a class="best__text best__text--mail" href="mailto:#hireKytuk@gmail.com">hireShpik@gmail.com</a>
+                  <p class="best__text">5 лет в сервисе</p>
+                </div>
+              </div>
+              <div class="reviews__task">Дизайн внутренних страниц сайта <span class="previews__price">$ 240.00</span></div>
+              <q class="reviews__quote">Заказ выполнила быстро и очень качественно, не первый раз работаю с Алекснадрой, отличное понимание своего дела</q>
+            </div>
+            <div class="reviews__item element element--full">
+              <div class="best__box best__box--reviews">
+                <img class="best__image element" src="img/best-freelancer.jpg" alt="Фото фрилансера «»">
+                <div class="best__info">
+                  <h3 class="best__title">Алексей Гобарь</h3>
+                  <a class="best__text best__text--mail" href="mailto:#hireKytuk@gmail.com">hireGobar@gmail.com</a>
+                  <p class="best__text">2 года в сервисе</p>
+                </div>
+              </div>
+              <div class="reviews__task">Дизайн версии сайта <span class="previews__price">$ 160.00</span></div>
+              <q class="reviews__quote">Первый раз работал с этим исполнителем, но остались хорошие впечатления, будем работать дальше.<br>
+                Правда в один момент пропала и не отвечала на сообщения весь день, но результат предоставила хороший</q>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

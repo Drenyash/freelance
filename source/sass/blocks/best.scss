@@ -40,6 +40,7 @@
 }
 .best__text--mail {
   position: relative;
+  display: block;
   &::after {
     content: "";
     position: absolute;
@@ -55,6 +56,27 @@
     transform: translateY(-50%);
   }
 }
+.best__box--reviews {
+  margin-bottom: 20px;
+  .best__text--mail {
+    margin-bottom: 15px;
+  }
+  .best__title {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+  .best__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .best__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .best__reviews {
   margin-top: 10px;
   font-size: 16px;

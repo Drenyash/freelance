@@ -1,0 +1,70 @@
+.profile__breadcrumbs {
+  margin-bottom: 20px;
+}
+
+.profile--element {
+  margin-bottom: 10px;
+}
+
+.profile__bg {
+  display: block;
+  width: 100%;
+  height: 220px;
+  background: radial-gradient(411.41% 1529.04% at 1.55% 241.88%, #0076CB 0%, #98ECEC 92.98%);
+  border-radius: 20px 20px 0px 0px;
+}
+
+.profile__box {
+  padding: 30px 80px;
+}
+
+.profile__picture-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+.profile__avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.profile__name {
+  margin-bottom: 5px;
+  font-size: 32px;
+  line-height: 37px;
+  font-weight: 500;
+}
+
+.profile__place {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.profile__header {
+  margin-bottom: 40px;
+}
+
+.profile-skills__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.profile-skills__item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 25px;
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: $blue;
+    border-radius: 50%;
+  }
+}

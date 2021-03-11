@@ -1,0 +1,23 @@
+.reviews__wrapper {
+  padding: 40px 80px;
+}
+
+.reviews__item {
+  padding: 20px;
+  &:not(:last-child) {
+    margin-bottom: 29px;
+  }
+}
+
+.reviews__task {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $blue;
+}
+
+.reviews__quote {
+  font-size: 18px;
+  line-height: 25px;
+}
