@@ -1,0 +1,72 @@
+.best {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $bgDark;
+  .container {
+    padding: 0 100px 0 170px;
+  }
+}
+.best__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+.best__item {
+  display: block;
+  width: 100%;
+}
+.best__box {
+  display: flex;
+}
+.best__image {
+  max-width: 100px;
+}
+.best__info {
+  display: block;
+  margin-left: 20px;
+}
+.best__title {
+  margin-bottom: 4px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.best__text {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $textBlack;
+}
+.best__text--mail {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    display: block;
+    width: 23px;
+    height: 19px;
+    background-image: url('../../img/icons/mail_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: translateY(-50%);
+  }
+}
+.best__reviews {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $blue;
+}
+
+.best-skills__title {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $textBlack;
+}

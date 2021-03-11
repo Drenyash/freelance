@@ -1,0 +1,25 @@
+.intro {
+  padding-bottom: 150px;
+};
+.intro__wrapper {
+  background-image: url('../../img/icons/startup.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+};
+.intro__header {
+  display: block;
+  padding-top: 94px;
+};
+.intro__title {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+};
+.intro__description {
+  display: block;
+  margin-bottom: 70px;
+  font-size: 24px;
+  line-height: 28px;
+};

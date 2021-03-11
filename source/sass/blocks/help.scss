@@ -1,0 +1,42 @@
+.help {
+  display: flex;
+  align-items: center;
+}
+
+.help__box {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  min-width: 320px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../img/icons/search_icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transform: translateY(-50%);
+  }
+};
+
+.help__input {
+  display: block;
+  padding: 18.5px 45.5px 18.5px 30.5px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 23px;
+  &::placeholder {
+    color: $textColor;
+  }
+};
+.help__text {
+  display: block;
+  margin: 0 30px;
+  line-height: 21px;
+  font-weight: 700;
+};

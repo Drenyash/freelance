@@ -1,0 +1,126 @@
+.faq {
+  .container {
+    padding: 0 194px;
+  }
+}
+
+.faq__wrapper {
+  display: block;
+  padding: 60px;
+  padding-bottom: 400px;
+  background-color: $white;
+}
+
+.faq__title {
+  margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  span {
+    color: $blue;
+  }
+}
+
+.faq__header {
+  margin-bottom: 140px;
+}
+
+.faq__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.faq__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq__item {
+  display: block;
+  margin-bottom: 20px;
+  &--active {
+    .faq__link {
+      color: $textColor;
+    }
+  }
+}
+
+.faq__link {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $textBlack;
+  transition: 0.2s;
+  &:hover {
+    color: $textColor;
+  }
+}
+
+.faq__element {
+  position: relative;
+  display: block;
+  margin-bottom: 14px;
+  padding: 40px 40px 20px 20px;
+  max-width: 720px;
+  cursor: pointer;
+}
+
+.faq__head {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.faq__text {
+  display: none;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: $textBlack;
+}
+
+.close__icon {
+  position: absolute;
+  top: 50%;
+  right: 45px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  transition: 0.4s linear;
+  background-image: url('../../img/icons/plus.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.faq__element--active {
+  .faq__text {
+    display: block;
+  }
+  .close__icon {
+    top: 44px;
+    right: 46px;
+    transform: rotate(45deg);
+  }
+}
+
+.faq__rates {
+  display: flex;
+  margin-top: 60px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $textBlack;
+  a {
+    display: block;
+    margin-left: 20px;
+    width: 24px;
+    height: 24px;
+    &:first-child {
+      margin-left: 30px;
+    }
+  }
+}

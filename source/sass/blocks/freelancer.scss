@@ -1,0 +1,23 @@
+.freelancer__info {
+  display: flex;
+  align-items: center;
+}
+
+.freelancer__image {
+  margin-right: 17px;
+  max-width: 84px;
+  max-height: 84px;
+}
+
+.freelancer__name {
+  font-weight: 700;
+}
+
+.freelancer__place {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.freelancer__skills {
+  margin-top: 14px;
+}

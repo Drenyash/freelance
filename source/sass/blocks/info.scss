@@ -1,0 +1,79 @@
+.info {
+  padding: 100px 0;
+  background-color: $bgDark;
+}
+
+.info__header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.info .section__subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $textColor;
+  order: 2;
+}
+
+.info__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info__box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  margin-right: 94px;
+}
+
+.info__image {
+  max-width: 348px;
+}
+
+.info__item {
+  display: block;
+  max-width: 400px;
+}
+
+.info__title {
+  position: relative;
+  margin-bottom: 15px;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../img/icons/chevron.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.2s linear;
+  }
+}
+
+.info__text {
+  display: none;
+  margin-bottom: 25px;
+}
+
+.info__item--active {
+  .info__text {
+    display: block;
+  }
+  .info__title::before {
+    transform: rotate(180deg);
+  }
+}
+
+.info__list {
+  width: 50%;
+}
