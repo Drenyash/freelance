@@ -1,38 +1,16 @@
-// info scripts
-const infoItem = document.querySelectorAll('.info__item');
-const faqItem = document.querySelectorAll('.faq__element');
+const userNavigation = document.querySelector('.user__list');
+const userItem = userNavigation.querySelectorAll('.user__item');
 
-infoItem.forEach((element)=> {
-  const infoTitle = element.querySelector('.info__title');
-  infoTitle.addEventListener('click', (evt)=> {
-    document.querySelectorAll(".info__item").forEach(item => item.classList.remove("info__item--active"));
-    element.classList.add("info__item--active");
+if (userNavigation.classList.contains('user__list--login')) {
+  userItem.forEach((element, i)=> {
+    if (!element.classList.contains('user__item--logout')) {
+      element.style.display = 'block';
+    }
   })
-})
-
-faqItem.forEach((element)=> {
-  element.addEventListener('click', (evt)=> {
-    document.querySelectorAll(".faq__element").forEach(item => item.classList.remove("faq__element--active"));
-    element.classList.add("faq__element--active");
+} else {
+  userItem.forEach((element, i)=> {
+    if (element.classList.contains('user__item--logout')) {
+      element.style.display = 'block';
+    }
   })
-})
-
-const faqBtn = document.querySelector('.faq__btn');
-const modal = document.querySelector('.modal');
-const modalClose = modal.querySelector('.modal__cancel');
-
-faqBtn.addEventListener('click', ()=> {
-  if (!modal.classList.contains('modal--active')) {
-    modal.classList.add('modal--active');
-  } else {
-    modal.classList.remove('modal--active');
-  }
-})
-
-modalClose.addEventListener('click', ()=> {
-  if (!modal.classList.contains('modal--active')) {
-    modal.classList.add('modal--active');
-  } else {
-    modal.classList.remove('modal--active');
-  }
-})
+}

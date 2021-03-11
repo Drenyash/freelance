@@ -19,9 +19,56 @@
           <a class="nav__item" href="#">Примеры</a>
           <a class="nav__item" href="#">FAQ</a>
         </nav>
-        <div class="user__nav element">
-          <img src="img/icons/user_icon.svg" alt="">
-        </div>
+        <ul class="user__list">
+          <li class="user__item">
+            <a class="user__nav user__nav--add element" href="profile.html">
+              <span class="addOneMore"></span>
+            </a>
+          </li>
+          <li class="user__item">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/icons/mail_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="user__item">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/icons/bell_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="user__item user__item--avatar">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/user.jpg" alt="">
+            </a>
+            <ul class="user__menu menu element">
+              <li class="menu__item">
+                <a class="menu__link" href="">Мои заказы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Заявки</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Транзакции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Арбитраж</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Проф.аккаунт</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Настройка</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Выход</a>
+              </li>
+            </ul>
+          </li>
+          <li class="user__item user__item--logout">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/icons/user_icon.svg" alt="">
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -181,5 +228,6 @@
     </div>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>

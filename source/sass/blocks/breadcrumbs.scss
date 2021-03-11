@@ -1,0 +1,32 @@
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  &:not(:first-child) {
+    &::before {
+      content: "/";
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 16px;
+      color: $textBlack;
+    }
+  }
+}
+
+.breadcrumbs__item--current {
+  .breadcrumbs__link {
+    color: $blue;
+  }
+}
+
+.breadcrumbs__link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $textBlack;
+}
