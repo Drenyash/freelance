@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="index">
+  <header class="header">
+    <div class="container">
+      <div class="header__nav">
+        <a class="header__logo logo" href="index.html">Лого.</a>
+        <nav class="nav">
+          <a class="nav__item" href="#">О нас</a>
+          <a class="nav__item" href="#">Как это работает?</a>
+          <a class="nav__item" href="#">Примеры</a>
+          <a class="nav__item" href="faq.html">FAQ</a>
+        </nav>
+        <ul class="user__list user__list--login">
+          <li class="user__item">
+            <a class="user__nav user__nav--add element" href="profile.html">
+              <span class="addOneMore"></span>
+            </a>
+          </li>
+          <li class="user__item">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/icons/mail_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="user__item">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/icons/bell_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="user__item user__item--avatar">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/user.jpg" alt="">
+            </a>
+            <ul class="user__menu menu element">
+              <li class="menu__item">
+                <a class="menu__link" href="">Мои заказы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Заявки</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Транзакции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Арбитраж</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Проф.аккаунт</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Настройка</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Выход</a>
+              </li>
+            </ul>
+          </li>
+          <li class="user__item user__item--logout">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/icons/user_icon.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="profile profile--settings profile--element">
+      <div class="container container--profile">
+        <div class="profile__wrapper element element--full">
+          <div class="profile__bg"></div>
+          <div class="profile__box">
+            <h1 class="create-ad__title"><span>Создание</span>объявления</h1>
+            <form action="#" method="POST" class="profile__form user-form">
+              <fieldset>
+                <input class="element" type="text" placeholder="Введите заголовок для вашего объявления...">
+              </fieldset>
+              <fieldset>
+                <div>
+                  <h3 class="">Категория</h3>
+                  <select name="#" id="">
+                    <option value="0">Дизайн</option>
+                  </select>
+                </div>
+                <div>
+                  <h3 class="">Подкатегория</h3>
+                  <select name="#" id="">
+                    <option value="0">Веб-дизайн</option>
+                  </select>
+                </div>
+              </fieldset>
+              <fieldset>
+                <h3>Тип оплаты</h3>
+                <ul>
+                  <li>
+                    <label>
+                      <input type="radio" name="offers-type">
+                      По-часовая
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="offers-type">
+                      Фиксированная
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="offers-type">
+                      Контрактная
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="offers-type">
+                      По-задачная
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <h3>Сумма оплаты</h3>
+                <input type="text" placeholder="$">
+              </fieldset>
+              <fieldset>
+                <h3>Укажите навыки, которые по вашему мнению нужны:</h3>
+                <div>
+                  <button type="button">Добавить навык <span>+</span></button>
+                </div>
+                <div class="text-edit">
+                  <div class="text-edit__header">
+                    <ul class="text-edit__list">
+                      <li class="text-edit__item">B</li>
+                      <li class="text-edit__item">/</li>
+                      <li class="text-edit__item">
+                        <img src="img/icons/union_icon.svg" alt="">
+                      </li>
+                      <li class="text-edit__item">
+                        <img src="img/icons/link_icon.svg" alt="">
+                      </li>
+                      <li class="text-edit__item">
+                        <img src="img/icons/list_icon.svg" alt="">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-edit__content">
+                    <textarea class="text-edit__area" cols="30" rows="10" placeholder="Описание для вашего объявления..."></textarea>
+                    <p class="text-edit__max-value"><span class="value">3500</span> символов</p>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <h3>Прикрепите материалы, которые могут помочь в выполнении заказа</h3>
+                <label class="modal__label modal__label--file" for="file">
+                  Прикрепите фото или видео
+                  <input class="visually-hidden" type="file" id="file">
+                </label>
+              </fieldset>
+              <div class="profile__control control">
+                <button class="control__btn btn" type="submit">Создать объявление</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <h2 class="footer__title">Freelance Market</h2>
+          <p class="footer__text">Платформа на которой вы сможете найти любую работу и любого исполнителя, в любое время суток</p>
+          <div class="copyright">Copyright© 2021</div>
+        </div>
+        <ul class="footer-nav">
+          <li class="footer-nav__header">
+            <ul class="footer-nav__element">
+              <h3 class="footer__head">Навигация</h3>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">О нас</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Как это работает ?</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Примеры</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">FAQ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav__header">
+            <ul class="footer-nav__element">
+              <h3 class="footer__head">Информация</h3>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Правила</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Политика приватности</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Контакты</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Служба поддержки</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav__header">
+            <ul class="footer-nav__element">
+              <h3 class="footer__head">Соц. сети</h3>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Facebook</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Twitter</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Linkedin</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">YouTube</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
