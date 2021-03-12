@@ -16,6 +16,9 @@
 
 .profile__box {
   padding: 30px 80px;
+  &--add {
+    padding-top: 60px;
+  }
 }
 
 .profile__picture-box {
@@ -67,4 +70,15 @@
     background-color: $blue;
     border-radius: 50%;
   }
+}
+
+.profile--settings {
+  .profile__name {
+    margin-bottom: 40px;
+  }
+}
+
+.profile__control {
+  margin-top: 50px;
+  margin-bottom: 77px;
 }

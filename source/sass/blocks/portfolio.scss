@@ -12,3 +12,20 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
   grid-column-gap: 28px;
 }
+
+.portfolio__edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  .section__head {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio__edit__link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $blue;
+}

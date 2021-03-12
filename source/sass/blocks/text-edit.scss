@@ -1,0 +1,60 @@
+.text-edit {
+  display: block;
+  width: 100%;
+  padding: 21px;
+  background: #FFFFFF;
+  border: 1px solid #F9F9F9;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 5px #F5F5F5;
+  border-radius: 4px;
+}
+
+.text-edit__header {
+  margin-bottom: 16px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $textLight;
+}
+
+.text-edit__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.text-edit__item {
+  display: block;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  color: $textLight;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 22px;
+  }
+}
+
+.text-edit__content {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.text-edit__area {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border: none;
+  resize: none;
+}
+
+.text-edit__max-value {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $textLight;
+}

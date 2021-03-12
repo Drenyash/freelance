@@ -218,8 +218,10 @@
         <input class="modal__input element" type="text" placeholder="Полное имя" required>
         <input class="modal__input element" type="mail" placeholder="Электронная почта" required>
         <textarea class="modal__area element" name="modal-area" cols="30" rows="10" placeholder="Здравствуйте, у меня такая проблема..."></textarea>
-        <input class="visually-hidden" type="file" id="file">
-        <label class="modal__label modal__label--file" for="file">Прикрепите фото или видео</label>
+        <label class="modal__label modal__label--file" for="file">
+          Прикрепите фото или видео
+          <input class="visually-hidden" type="file" id="file">
+        </label>
         <div class="modal__control">
           <button class="modal__btn btn" type="submit">Отправить</button>
           <button class="modal__cancel btn" type="button">Отмена</button>

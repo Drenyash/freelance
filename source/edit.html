@@ -77,110 +77,42 @@
       <div class="container container--profile">
         <div class="profile__wrapper element element--full">
           <div class="profile__bg"></div>
-          <div class="profile__box">
-            <form action="#" method="POST" class="profile__form user-form">
+          <div class="profile__box profile__box--add">
+            <form action="#" method="POST" class="profile__form portfolio-form">
               <header class="profile__header">
-                <div class="profile__picture-box">
-                  <img class="profile__avatar" src="img/resume - 1.jpg" alt="">
-                </div>
-                <h2 class="profile__name">Александра Викторова</h2>
-                <div class="user-form__box">
-                  <h3 class="section__head">Место жительства</h3>
-                  <fieldset class="user-form__wrapper">
-                    <p class="user-form__item">
-                      <input class="user-form__input element" type="text" placeholder="Укажите страну">
-                    </p>
-                    <p class="user-form__item">
-                      <input class="user-form__input element" type="text" placeholder="Укажите город">
-                    </p>
-                  </fieldset>
-                </div>
-                <div class="user-form__box">
-                  <h3 class="section__head">Баннер</h3>
-                  <fieldset class="user-form__wrapper">
-                    <div class="select__wrapper">
-                      <select class="user-form__item user-form__select select element">
-                        <option class="select__item" value="" disabled selected>Опыт</option>
-                        <option class="select__item" value="0">Junior</option>
-                        <option class="select__item" value="1">Middle</option>
-                        <option class="select__item" value="2">Senior</option>
-                      </select>
-                    </div>
-                    <div class="select__wrapper">
-                      <select class="user-form__item user-form__select select element">
-                        <option class="select__item" value="" disabled selected>Навыки</option>
-                        <option class="select__item" value="0">HTML</option>
-                        <option class="select__item" value="1">CSS</option>
-                        <option class="select__item" value="2">JS</option>
-                      </select>
-                    </div>
-                    <div class="select__wrapper">
-                      <select class="user-form__item user-form__select select element">
-                        <option class="select__item" value="" disabled selected>Режим работы</option>
-                        <option class="select__item" value="0">Полный день</option>
-                        <option class="select__item" value="1">Частичная занятость</option>
-                        <option class="select__item" value="2">Подработка</option>
-                      </select>
-                    </div>
-                    <p class="user-form__item">
-                      <input class="user-form__input user-form__input--cash element" type="number" placeholder="Зарплата">
-                    </p>
-                  </fieldset>
-                </div>
+                <h2 class="profile__name">Добавление работы</h2>
               </header>
-              <section class="portfolio slider">
-                <div class="portfolio__edit">
-                  <h3 class="section__head">Портфолио</h3>
-                  <a class="portfolio__edit__link" href="edit.html">Прикрепить работу</a>
-                </div>
-                <div class="portfolio__list">
-                  <div class="portfolio__item">
-                    <a class="portfilio__link" href="#">
-                      <img class="portfolio__image" src="img/portfolio_1.jpg" alt="">
-                    </a>
+              <div class="portfolio-form__item">
+                <label class="portfolio-form__title">Название работы</label>
+                <input class="portfolio-form__input element" type="text" placeholder="Введите название работы">
+              </div>
+              <div class="portfolio-form__item">
+                <label class="portfolio-form__title">Описание</label>
+                <textarea class="portfolio-form__input element" name="" id="" cols="30" rows="10" placeholder="Здравствуйте, я..."></textarea>
+              </div>
+              <label class="modal__label modal__label--file" for="file">
+                Прикрепите фото или видео
+                <input class="visually-hidden" type="file" id="file">
+              </label>
+              <div class="portfolio-preview">
+                <h3 class="portfolio-preview__title">Превью</h3>
+                <div class="portfilio__preview__wrapper">
+                  <div class="portfolio-preview__item">
+                    <div class="portfolio-preview__image">
+                      <img src="img/resume - 1.jpg" alt="">
+                    </div>
+                    <p class="portfolio-preview__text">123.png</p>
                   </div>
-                  <div class="portfolio__item">
-                    <a class="portfolio__link" href="#">
-                      <img class="portfolio__image" src="img/portfolio_2.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="portfolio__item">
-                    <a class="portfolio__link" href="#">
-                      <img class="portfolio__image" src="img/portfolio_3.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="portfolio__item">
-                    <a class="portfolio__link" href="#">
-                      <img class="portfolio__image" src="img/portfolio_4.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
-              </section>
-              <fieldset class="user-form__wrapper">
-                <div class="text-edit">
-                  <div class="text-edit__header">
-                    <ul class="text-edit__list">
-                      <li class="text-edit__item">B</li>
-                      <li class="text-edit__item">/</li>
-                      <li class="text-edit__item">
-                        <img src="img/icons/union_icon.svg" alt="">
-                      </li>
-                      <li class="text-edit__item">
-                        <img src="img/icons/link_icon.svg" alt="">
-                      </li>
-                      <li class="text-edit__item">
-                        <img src="img/icons/list_icon.svg" alt="">
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="text-edit__content">
-                    <textarea class="text-edit__area" cols="30" rows="10" placeholder="Расскажите о себе"></textarea>
-                    <p class="text-edit__max-value"><span class="value">3500</span> символов</p>
+                  <div class="portfolio-preview__item">
+                    <div class="portfolio-preview__image">
+                      <img src="img/resume - 1.jpg" alt="">
+                    </div>
+                    <p class="portfolio-preview__text">124.png</p>
                   </div>
                 </div>
-              </fieldset>
+              </div>
               <div class="profile__control control">
-                <button class="control__btn btn" type="submit">Сохранить изменения</button>
+                <button class="control__btn btn" type="submit">Добавить работу</button>
                 <button class="control__cancel btn" type="button">Отмена</button>
               </div>
             </form>
