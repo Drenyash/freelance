@@ -32,6 +32,12 @@
   }
 }
 
+.ad__link {
+  display: block;
+  padding: 40px;
+  color: $textColor;
+}
+
 .ad__card--freelancers {
   display: flex;
   justify-content: space-between;
