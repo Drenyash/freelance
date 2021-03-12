@@ -76,74 +76,29 @@
     <section class="profile profile--settings profile--element">
       <div class="container container--profile">
         <div class="profile__wrapper element element--full">
-          <div class="profile__bg"></div>
-          <div class="profile__box">
-            <header>
-              <div>
-                <img src="" alt="">
-                <button>Подать заявку</button>
-              </div>
-              <div>
-                <div>
-                  <h3>Анатолий Сульянов</h3>
-                  <p>Россия, Москва</p>
-                </div>
-                <div>
-                  <p>Опубликовано 3 дня назад</p>
-                  <p>Действительно ещ  27 дней</p>
-                </div>
-              </div>
-            </header>
-            <div>
-              <div>
-                <h3>Создание сайта под ключ <span>#91723</span></h3>
-                <p>$ 25/ час<br><span>3 заявки</span></p>
-              </div>
-              <div>
-                <h4>Требования</h4>
-                <ul>
-                  <li>Уровень навыков junior или выше</li>
-                  <li>Отличное владение русским языком</li>
-                </ul>
-              </div>
-              <div>
-                <h4>Навыки</h4>
-                <ul>
-                  <li>Программирование</li>
-                  <li>Фигма</li>
-                  <li>Прототипирование</li>
-                </ul>
-              </div>
-              <div>
-                <h4>Описание</h4>
-                <p>Нужно создать сайт от дизайна до верстки. Имется макет, но очень сырой. Все кто имеют знакомых специалистов, которые могу делать одну из частей, писать на почту. </p>
-              </div>
-              <div>
-                <h4>Прикрепленные файлы</h4>
-              </div>
+          <form action="">
+            <h2>Подача заявки</h2>
+            <fieldset>
+              <p>Цена</p>
+              <input type="text" placeholder="$">
+            </fieldset>
+            <fieldset>
+              <p>Сроки</p>
+              <input type="text" placeholder="Введите дни">
+            </fieldset>
+            <fieldset>
+              <p>Текст сообщения</p>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Здравствуйте, я..."></textarea>
+              <label class="modal__label modal__label--file" for="file">
+                Прикрепите фото или видео
+                <input class="visually-hidden" type="file" id="file">
+              </label>
+            </fieldset>
+            <div class="profile__control control">
+              <button class="control__btn btn" type="submit">Отправить</button>
+              <button class="control__cancel btn" type="button">Отмена</button>
             </div>
-          </div>
-        </div>
-        <div class="profile__wrapper element element--full">
-          <div class="profile__box">
-            <h3>Заявки от других исполнителей</h3>
-            <article>
-              <img src="" alt="">
-              <div>
-                <h4>Регина Шпик</h4>
-                <a href="#">hireShpik@gmail.com</a>
-                <p>5 лет в сервисе</p>
-              </div>
-            </article> 
-            <article>
-              <img src="" alt="">
-              <div>
-                <h4>Алексей Гобарь</h4>
-                <a href="#">hireGobar@gmail.com</a>
-                <p>2 года в сервисе</p>
-              </div>
-            </article>
-          </div>
+          </form>
         </div>
       </div>
     </section>
