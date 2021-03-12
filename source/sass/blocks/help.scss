@@ -8,6 +8,10 @@
   width: 100%;
   max-width: 530px;
   min-width: 320px;
+  &--big {
+    max-width: 640px;
+    min-width: 640px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -32,6 +36,9 @@
   line-height: 23px;
   &::placeholder {
     color: $textColor;
+  }
+  &--board {
+    padding: 18.5px 45px 18.5px 30px;
   }
 };
 .help__text {

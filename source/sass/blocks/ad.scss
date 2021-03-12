@@ -1,0 +1,70 @@
+.ad__left {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  height: 180px;
+}
+
+.ad__task {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.ad__description {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.ad__bold {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $textLight;
+}
+
+.ad__card {
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
+
+.ad__link {
+  display: block;
+  padding: 40px;
+  padding-right: 62px;
+  color: $textColor;
+}
+
+.ad__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ad__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.ad__element {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $textLight;
+  &--price {
+    color: $blue;
+  }
+}
+
+.ad__skills {
+  margin-top: auto;
+}

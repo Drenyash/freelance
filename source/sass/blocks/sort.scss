@@ -1,0 +1,47 @@
+.sort {
+  display: flex;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.sort__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &--toggle {
+    .sort__text {
+      color: $textColor;
+    }
+  }
+  &:not(:last-child) {
+    margin-right: 48px;
+  }
+}
+
+.sort__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $textLight;
+}
+
+.sort__icons {
+  display: flex;
+  flex-direction: column;
+  .sort__icon:first-child {
+    margin-bottom: 5px;
+    transform: rotate(180deg);
+  }
+}
+
+.sort__icon {
+  display: inline-block;
+  margin-left: 7px;
+  width: 8px;
+  height: 4px;
+}
