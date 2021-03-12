@@ -32,11 +32,30 @@
   }
 }
 
-.ad__link {
-  display: block;
-  padding: 40px;
-  padding-right: 62px;
+.ad__card--freelancers {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 30px 30px;
   color: $textColor;
+  .ad__left {
+    width: 100%;
+    max-width: 320px;
+    height: 250px;
+  }
+  .best__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+  .best__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .ad__right {
+    width: 100%;
+    max-width: 760px;
+  }
 }
 
 .ad__top {
@@ -53,6 +72,10 @@
   margin-bottom: 15px;
   padding: 0;
   list-style: none;
+  &--works {
+    justify-content: flex-start;
+    max-width: none;
+  }
 }
 
 .ad__element {
@@ -63,8 +86,39 @@
   &--price {
     color: $blue;
   }
+  &--works {
+    display: block;
+    width: 160px;
+    height: 200px;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
 }
 
 .ad__skills {
   margin-top: auto;
+}
+
+.ad__right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ad__price-box {
+  width: 100%;
+  padding-left: 60px;
+}
+
+.ad__price {
+  font-size: 32px;
+  line-height: 27px;
+  font-weight: 500;
+  color: $blue;
+  &--small {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 900;
+    color: $textLight;
+  }
 }

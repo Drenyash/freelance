@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="index">
+  <header class="header">
+    <div class="container">
+      <div class="header__nav">
+        <a class="header__logo logo" href="index.html">Лого.</a>
+        <nav class="nav">
+          <a class="nav__item" href="#">О нас</a>
+          <a class="nav__item" href="#">Как это работает?</a>
+          <a class="nav__item" href="#">Примеры</a>
+          <a class="nav__item" href="faq.html">FAQ</a>
+        </nav>
+        <ul class="user__list">
+          <li class="user__item">
+            <a class="user__nav user__nav--add element" href="profile.html">
+              <span class="addOneMore"></span>
+            </a>
+          </li>
+          <li class="user__item">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/icons/mail_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="user__item">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/icons/bell_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="user__item user__item--avatar">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/user.jpg" alt="">
+            </a>
+            <ul class="user__menu menu element">
+              <li class="menu__item">
+                <a class="menu__link" href="">Мои заказы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Заявки</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Транзакции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Арбитраж</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Проф.аккаунт</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Настройка</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Выход</a>
+              </li>
+            </ul>
+          </li>
+          <li class="user__item user__item--logout">
+            <a class="user__nav element" href="profile.html">
+              <img src="img/icons/user_icon.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <header class="board__header">
+        <h2 class="board__title">Доска исполнителей</h2>
+        <div class="board__search">
+          <div class="help__box help__box--big">
+            <input class="element help__input help__input--board" type="text" placeholder="Вёрстка сайта...">
+          </div> 
+          <button class="board__selection element">
+            <img src="img/icons//selection_icon.svg" alt="">
+          </button>
+        </div>
+      </header>
+      <div class="board__wrapper board__selection-more board__selection-more--close">
+        <div class="board__content">
+          <form class="board__form" action="#">
+            <fieldset class="board__box">
+              <h3 class="board__head">Категории</h3>
+              <ul class="board__list">
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-1" type="checkbox">
+                  <label class="board__checkbox" for="board-1">3d графика</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2" type="checkbox">
+                  <label class="board__checkbox" for="board-2">2d графика</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-3" type="checkbox">
+                  <label class="board__checkbox" for="board-3">Веб разработка</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-4" type="checkbox">
+                  <label class="board__checkbox" for="board-4">Интернет продвижение</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-5" type="checkbox">
+                  <label class="board__checkbox" for="board-5">Переводы</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-6" type="checkbox">
+                  <label class="board__checkbox" for="board-6">Видео</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-7" type="checkbox">
+                  <label class="board__checkbox" for="board-7">Звук</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-8" type="checkbox">
+                  <label class="board__checkbox" for="board-8">IT и программирование</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-9" type="checkbox">
+                  <label class="board__checkbox" for="board-9">Реклама</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-10" type="checkbox">
+                  <label class="board__checkbox" for="board-10">Тексты</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-11" type="checkbox">
+                  <label class="board__checkbox" for="board-11">Фото</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="board__box">
+              <h3 class="board__head">Подкатегория</h3>
+              <ul class="board__list">
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-1" type="checkbox">
+                  <label class="board__checkbox" for="board-2-1">Сайт "под ключ"</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-2" type="checkbox">
+                  <label class="board__checkbox" for="board-2-2">Верстка</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-3" type="checkbox">
+                  <label class="board__checkbox" for="board-2-3">Дизайн сайтов</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-4" type="checkbox">
+                  <label class="board__checkbox" for="board-2-4">Скрипты/Web-приложения</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-5" type="checkbox">
+                  <label class="board__checkbox" for="board-2-5">Разработка CMS</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-6" type="checkbox">
+                  <label class="board__checkbox" for="board-2-6">Мобильные сайты</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-7" type="checkbox">
+                  <label class="board__checkbox" for="board-2-7">Интерфейс</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-8" type="checkbox">
+                  <label class="board__checkbox" for="board-2-8">Прототипирование</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-9" type="checkbox">
+                  <label class="board__checkbox" for="board-2-9">Landing Page</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-10" type="checkbox">
+                  <label class="board__checkbox" for="board-2-10">Аудит сайтов</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-11" type="checkbox">
+                  <label class="board__checkbox" for="board-2-11">Флеш сайты</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-12" type="checkbox">
+                  <label class="board__checkbox" for="board-2-12">Виртуальные флеш туры</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-13" type="checkbox">
+                  <label class="board__checkbox" for="board-2-13">Флеш анимация</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-2-14" type="checkbox">
+                  <label class="board__checkbox" for="board-2-14">Флеш программирование</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="board__box board__box--last">
+              <h3 class="board__head">Тип оплаты</h3>
+              <ul class="board__list">
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-3-1" type="checkbox">
+                  <label class="board__checkbox" for="board-3-1">Часовая оплата</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-3-2" type="checkbox">
+                  <label class="board__checkbox" for="board-3-2">Контрактная оплата</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-3-3" type="checkbox">
+                  <label class="board__checkbox" for="board-3-3">По-задачная</label>
+                </li>
+                <li class="board__item">
+                  <input class="visually-hidden" id="board-3-4" type="checkbox">
+                  <label class="board__checkbox" for="board-3-4">Фиксированная оплата</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="board__control control">
+              <button class="control__btn btn" type="submit">Сохранить</button>
+              <button class="control__cancel btn" type="button">Отмена</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="board__wrapper">
+        <div class="board__content">
+          <div class="board__filter">
+            <p class="board__count">Найдено 135 предложений</p>
+          </div>
+          <div class="board__ad ad">
+            <article class="ad__card ad__card--freelancers element element--full">
+              <div class="ad__left">
+                <div class="best__item">
+                  <div class="best__box">
+                    <img class="best__image" src="img/best-freelancer.jpg" alt="Фото фрилансера «»">
+                    <div class="best__info">
+                      <h3 class="best__title">Алексей Кутюк</h3>
+                      <a class="best__text best__text--mail" href="mailto:#hireKytuk@gmail.com">hireKytuk@gmail.com</a>
+                      <p class="best__text">3 года в сервисе</p>
+                      <a class="best__reviews" href="#">843 отзыва</a>
+                    </div>
+                  </div>
+                  <div class="best-skills">
+                    <h4 class="best-skills__title">Навыки</h4>
+                    <ul class="skills__list">
+                      <li class="skills__item">Программирование</li>
+                      <li class="skills__item">Веб-дизайн</li>
+                    </ul>
+                  </div>
+                  <a class="board__btn btn" href="#">Заказать</a>
+                </div>
+              </div>
+              <div class="ad__right">
+                <div class="ad__works">
+                  <h3 class="board__head board__head--works">Лучшие работы</h3>
+                  <ul class="ad__list ad__list--works">
+                    <li class="ad__element ad__element--works">
+                      <a href="#">
+                        <img src="img/work-1.jpg" alt="">
+                      </a>
+                    </li>
+                    <li class="ad__element ad__element--works">
+                      <a href="#">
+                        <img src="img/work-2.jpg" alt="">
+                      </a>
+                    </li>
+                    <li class="ad__element ad__element--works">
+                      <a href="#">
+                        <img src="img/work-3.jpg" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ad__price-box">
+                  <p class="ad__price">$25/ час<br><span class="ad__price ad__price--small">от $15</span></p>
+                </div>
+              </div>
+            </article>
+            <article class="ad__card ad__card--freelancers element element--full">
+              <div class="ad__left">
+                <div class="best__item">
+                  <div class="best__box">
+                    <img class="best__image" src="img/best-freelancer.jpg" alt="Фото фрилансера «»">
+                    <div class="best__info">
+                      <h3 class="best__title">Виктория Прад</h3>
+                      <a class="best__text best__text--mail" href="mailto:#hireKytuk@gmail.com">hireKytuk@gmail.com</a>
+                      <p class="best__text">8 лет в сервисе</p>
+                      <a class="best__reviews" href="#">1369 отзыва</a>
+                    </div>
+                  </div>
+                  <div class="best-skills">
+                    <h4 class="best-skills__title">Навыки</h4>
+                    <ul class="skills__list">
+                      <li class="skills__item">Программирование</li>
+                      <li class="skills__item">Веб-дизайн</li>
+                      <li class="skills__item">Прототипирование</li>
+                    </ul>
+                  </div>
+                  <a class="board__btn btn" href="#">Заказать</a>
+                </div>
+              </div>
+              <div class="ad__right">
+                <div class="ad__works">
+                  <h3 class="board__head board__head--works">Лучшие работы</h3>
+                  <ul class="ad__list ad__list--works">
+                    <li class="ad__element ad__element--works">
+                      <a href="#">
+                        <img src="img/work-4.jpg" alt="">
+                      </a>
+                    </li>
+                    <li class="ad__element ad__element--works">
+                      <a href="#">
+                        <img src="img/work-5.jpg" alt="">
+                      </a>
+                    </li>
+                    <li class="ad__element ad__element--works">
+                      <a href="#">
+                        <img src="img/work-6.jpg" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ad__price-box">
+                  <p class="ad__price">$2500/ мес<br><span class="ad__price ad__price--small">от $15</span></p>
+                </div>
+              </div>
+            </article>
+            <article class="ad__card ad__card--freelancers element element--full">
+              <div class="ad__left">
+                <div class="best__item">
+                  <div class="best__box">
+                    <img class="best__image" src="img/best-freelancer.jpg" alt="Фото фрилансера «»">
+                    <div class="best__info">
+                      <h3 class="best__title">Максим купарь</h3>
+                      <a class="best__text best__text--mail" href="mailto:#hireKytuk@gmail.com">hireKytuk@gmail.com</a>
+                      <p class="best__text">2 года в сервисе</p>
+                      <a class="best__reviews" href="#">84 отзыва</a>
+                    </div>
+                  </div>
+                  <div class="best-skills">
+                    <h4 class="best-skills__title">Навыки</h4>
+                    <ul class="skills__list">
+                      <li class="skills__item">Программирование</li>
+                      <li class="skills__item">Веб-дизайн</li>
+                    </ul>
+                  </div>
+                  <a class="board__btn btn" href="#">Заказать</a>
+                </div>
+              </div>
+              <div class="ad__right">
+                <div class="ad__works">
+                  <h3 class="board__head board__head--works">Лучшие работы</h3>
+                  <ul class="ad__list ad__list--works">
+                    <li class="ad__element ad__element--works">
+                      <a href="#">
+                        <img src="img/work-4.jpg" alt="">
+                      </a>
+                    </li>
+                    <li class="ad__element ad__element--works">
+                      <a href="#">
+                        <img src="img/work-5.jpg" alt="">
+                      </a>
+                    </li>
+                    <li class="ad__element ad__element--works">
+                      <a href="#">
+                        <img src="img/work-6.jpg" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ad__price-box">
+                  <p class="ad__price">$10/ час<br><span class="ad__price ad__price--small">от $15</span></p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <h2 class="footer__title">Freelance Market</h2>
+          <p class="footer__text">Платформа на которой вы сможете найти любую работу и любого исполнителя, в любое время суток</p>
+          <div class="copyright">Copyright© 2021</div>
+        </div>
+        <ul class="footer-nav">
+          <li class="footer-nav__header">
+            <ul class="footer-nav__element">
+              <h3 class="footer__head">Навигация</h3>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">О нас</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Как это работает ?</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Примеры</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">FAQ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav__header">
+            <ul class="footer-nav__element">
+              <h3 class="footer__head">Информация</h3>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Правила</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Политика приватности</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Контакты</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Служба поддержки</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-nav__header">
+            <ul class="footer-nav__element">
+              <h3 class="footer__head">Соц. сети</h3>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Facebook</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Twitter</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Linkedin</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">YouTube</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/board.js"></script>
+</body>
+</html>

@@ -7,6 +7,7 @@
 }
 .skills__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -31,8 +32,8 @@
   line-height: 18px;
   color: $blue;
 }
-.skills__item:not(:first-child) {
-  &::before {
+.skills__item:not(:last-child) {
+  &::after {
     content: ",";
     display: block;
     padding-right: 5px;

@@ -72,6 +72,10 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 900;
+  &--works {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .board__list {
@@ -106,4 +110,8 @@
     font-size: 16px;
     line-height: 18px;
   }
+}
+
+.board__btn {
+  margin-top: auto;
 }
