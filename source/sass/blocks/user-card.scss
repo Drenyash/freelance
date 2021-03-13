@@ -1,0 +1,61 @@
+.user-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.user-card__image {
+  margin-right: 20px;
+  max-width: 100px;
+}
+.user-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.user-card__name {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.user-card__text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $textBlack;
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  &:last-child {
+    margin-top: 10px;
+  }
+}
+.user-card__text--mail {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    display: block;
+    width: 23px;
+    height: 19px;
+    background-image: url('../../img/icons/mail_icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-50%);
+  }
+}
+.user-card__text--reviews {
+  color: $blue;
+}
+
+.user-card--small {
+  margin-bottom: 14px;
+  .user-card__image {
+    max-width: 84px;
+  }
+  .user-card__text:last-child {
+    margin-top: 2px;
+  }
+}

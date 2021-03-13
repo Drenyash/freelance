@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="index">
+<body>
   <header class="header">
     <div class="container">
       <div class="header__nav">
@@ -77,12 +77,15 @@
       <header class="board__header">
         <h2 class="board__title">Задания</h2>
         <div class="board__search">
-          <div class="help__box help__box--big">
-            <input class="element help__input help__input--board" type="text" placeholder="Вёрстка сайта...">
+          <div class="board__help help">
+            <div class="help__box">
+              <input class="help__input element element--input" type="text" placeholder="Начните описывать проблему...">
+              <button class="help__btn"></button>
+            </div>
+            <button class="board__selection element">
+              <img src="img/icons//selection_icon.svg" alt="">
+            </button>
           </div> 
-          <button class="board__selection element">
-            <img src="img/icons//selection_icon.svg" alt="">
-          </button>
         </div>
       </header>
       <div class="board__wrapper board__selection-more board__selection-more--close">
@@ -196,7 +199,6 @@
                   <input class="visually-hidden" id="board-2-14" type="checkbox">
                   <label class="board__checkbox" for="board-2-14">Флеш программирование</label>
                 </li>
-                
               </ul>
             </fieldset>
             <fieldset class="board__box board__box--last">
@@ -221,8 +223,8 @@
               </ul>
             </fieldset>
             <div class="board__control control">
-              <button class="control__btn btn" type="submit">Сохранить</button>
-              <button class="control__cancel btn" type="button">Отмена</button>
+              <button class="btn btn--control" type="submit">Сохранить</button>
+              <button class="control__cancel btn btn--transparent" type="button">Отмена</button>
             </div>
           </form>
         </div>
@@ -268,11 +270,15 @@
                 <div class="ad__left">
                   <h3 class="ad__task">Создание сайта под ключ</h3>
                   <p class="ad__description">Нужно создать сайт от дизайна до верстки. Имется макет, но очень сырой. Все кто имеют знакомых специалистов, которые могу делать одну из частей, писать на почту.</p>
-                  <div class="ad__skills">
-                    <p class="ad__bold">Навыки</p>
-                    <ul class="skills__list skills__list--ad">
-                      <li class="skills__item">Программирование</li>
-                      <li class="skills__item">Веб-дизайн</li>
+                  <div class="ad__skills skills">
+                    <h4 class="skills__title">Навыки</h4>
+                    <ul class="skills__list">
+                      <li class="skills__item skills__item--button">
+                        <button class="skills__link" href="#">Программирование</button>
+                      </li>
+                      <li class="skills__item skills__item--button">
+                        <button class="skills__link" href="#">Веб-дизайн</button>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -291,10 +297,12 @@
                 <div class="ad__left">
                   <h3 class="ad__task">Подключить платежную систему</h3>
                   <p class="ad__description">Нужно создать сайт от дизайна до верстки. Имется макет, но очень сырой. Все кто имеют знакомых специалистов, которые могу делать одну из частей, писать на почту.</p>
-                  <div class="ad__skills">
-                    <p class="ad__bold">Навыки</p>
-                    <ul class="skills__list skills__list--ad">
-                      <li class="skills__item">Программирование</li>
+                  <div class="ad__skills skills">
+                    <h4 class="skills__title">Навыки</h4>
+                    <ul class="skills__list">
+                      <li class="skills__item skills__item--button">
+                        <button class="skills__link" href="#">Программирование</button>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -313,11 +321,15 @@
                 <div class="ad__left">
                   <h3 class="ad__task">Сделать семантическую разметку для сайта</h3>
                   <p class="ad__description">Нужно собрать сменатическое ядро, для увелечения конверсии сайта, тз закреплю</p>
-                  <div class="ad__skills">
-                    <p class="ad__bold">Навыки</p>
-                    <ul class="skills__list skills__list--ad">
-                      <li class="skills__item">Маркетинг</li>
-                      <li class="skills__item">SEO</li>
+                  <div class="ad__skills skills">
+                    <h4 class="skills__title">Навыки</h4>
+                    <ul class="skills__list">
+                      <li class="skills__item skills__item--button">
+                        <button class="skills__link" href="#">Маркетинг</button>
+                      </li>
+                      <li class="skills__item skills__item--button">
+                        <button class="skills__link" href="#">SEO</button>
+                      </li>
                     </ul>
                   </div>
                 </div>

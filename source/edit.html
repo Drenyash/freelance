@@ -78,19 +78,19 @@
         <div class="profile__wrapper element element--full">
           <div class="profile__bg"></div>
           <div class="profile__box profile__box--add">
-            <form action="#" method="POST" class="profile__form portfolio-form">
+            <form action="#" method="POST" class="form">
               <header class="profile__header">
-                <h2 class="profile__name">Добавление работы</h2>
+                <h2 class="section__heading">Добавление работы</h2>
               </header>
-              <div class="portfolio-form__item">
-                <label class="portfolio-form__title">Название работы</label>
-                <input class="portfolio-form__input element" type="text" placeholder="Введите название работы">
-              </div>
-              <div class="portfolio-form__item">
-                <label class="portfolio-form__title">Описание</label>
-                <textarea class="portfolio-form__input element" name="" id="" cols="30" rows="10" placeholder="Здравствуйте, я..."></textarea>
-              </div>
-              <label class="modal__label modal__label--file" for="file">
+              <fieldset class="form__wrapper">
+                <h3 class="section__head">Название работы</h3>
+                <input class="form__input form__input--big element element--input" type="text" placeholder="Введите название работы">
+              </fieldset>
+              <fieldset class="form__wrapper">
+                <h3 class="section__head">Описание</h3>
+                <textarea class="form__area element element--input" type="text" placeholder="Здравствуйте, я..."></textarea>
+              </fieldset>
+              <label class="file" for="file">
                 Прикрепите фото или видео
                 <input class="visually-hidden" type="file" id="file">
               </label>
@@ -99,21 +99,21 @@
                 <div class="portfilio__preview__wrapper">
                   <div class="portfolio-preview__item">
                     <div class="portfolio-preview__image">
-                      <img src="img/resume - 1.jpg" alt="">
+                      <img src="img/work-1.jpg" alt="">
                     </div>
                     <p class="portfolio-preview__text">123.png</p>
                   </div>
                   <div class="portfolio-preview__item">
                     <div class="portfolio-preview__image">
-                      <img src="img/resume - 1.jpg" alt="">
+                      <img src="img/work-2.jpg" alt="">
                     </div>
                     <p class="portfolio-preview__text">124.png</p>
                   </div>
                 </div>
               </div>
-              <div class="profile__control control">
-                <button class="control__btn btn" type="submit">Добавить работу</button>
-                <button class="control__cancel btn" type="button">Отмена</button>
+              <div class="control">
+                <button class="btn btn--control" type="submit">Добавить работу</button>
+                <button class="btn btn--transparent" type="button">Отмена</button>
               </div>
             </form>
           </div>

@@ -78,63 +78,67 @@
         <div class="profile__wrapper element element--full">
           <div class="profile__bg"></div>
           <div class="profile__box">
-            <h1 class="create-ad__title"><span>Создание</span>объявления</h1>
-            <form action="#" method="POST" class="profile__form user-form">
-              <fieldset>
-                <input class="element" type="text" placeholder="Введите заголовок для вашего объявления...">
+            <h1 class="main-title"><span>Создание</span> объявления</h1>
+            <form action="#" method="POST" class="form">
+              <fieldset class="form__wrapper">
+                <input class="form__input form__input--biggest element element--input" type="text" placeholder="Введите заголовок для вашего объявления...">
               </fieldset>
-              <fieldset>
-                <div>
-                  <h3 class="">Категория</h3>
-                  <select name="#" id="">
-                    <option value="0">Дизайн</option>
-                  </select>
-                </div>
-                <div>
-                  <h3 class="">Подкатегория</h3>
-                  <select name="#" id="">
-                    <option value="0">Веб-дизайн</option>
-                  </select>
+              <fieldset class="form__wrapper">
+                <div class="form__element">
+                  <div class="form__item">
+                    <h3 class="section__head">Категория</h3>
+                    <div class="special__wrapper">
+                      <select class="form__select form__select--big element element--input" name="#" id="">
+                        <option value="0">Дизайн</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <h3 class="section__head">Подкатегория</h3>
+                    <div class="special__wrapper">
+                      <select class="form__select form__select--big element element--input" name="#" id="">
+                        <option value="0">Веб-дизайн</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
               </fieldset>
-              <fieldset>
-                <h3>Тип оплаты</h3>
-                <ul>
-                  <li>
-                    <label>
-                      <input type="radio" name="offers-type">
-                      По-часовая
-                    </label>
+              <fieldset class="form__wrapper">
+                <h3 class="section__head">Тип оплаты</h3>
+                <ul class="form-list">
+                  <li class="form-list__item">
+                    <input class="visually-hidden" type="radio" id="radio-1" name="offers-type" checked>
+                    <label class="form-list__label" for="radio-1">По-часовая</label>
                   </li>
-                  <li>
-                    <label>
-                      <input type="radio" name="offers-type">
-                      Фиксированная
-                    </label>
+                  <li class="form-list__item">
+                    <input class="visually-hidden" type="radio" id="radio-2" name="offers-type">
+                    <label class="form-list__label" for="radio-2">Фиксированная</label>
                   </li>
-                  <li>
-                    <label>
-                      <input type="radio" name="offers-type">
-                      Контрактная
-                    </label>
+                  <li class="form-list__item">
+                    <input class="visually-hidden" type="radio" id="radio-3" name="offers-type">
+                    <label class="form-list__label" for="radio-3">Контрактная</label>
                   </li>
-                  <li>
-                    <label>
-                      <input type="radio" name="offers-type">
-                      По-задачная
-                    </label>
+                  <li class="form-list__item">
+                    <input class="visually-hidden" type="radio" id="radio-4" name="offers-type">
+                    <label class="form-list__label" for="radio-4">По-задачная</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
-                <h3>Сумма оплаты</h3>
-                <input type="text" placeholder="$">
-              </fieldset>
-              <fieldset>
-                <h3>Укажите навыки, которые по вашему мнению нужны:</h3>
-                <div>
-                  <button type="button">Добавить навык <span>+</span></button>
+              <fieldset class="form__wrapper">
+                <h3 class="section__head">Сумма оплаты</h3>
+                <div class="form__item">
+                  <div class="special__wrapper special__wrapper--icon">
+                    <input class="form__input form__input--number element element--input" type="number">
+                  </div>
                 </div>
+              </fieldset>
+              <fieldset class="form__wrapper">
+                <h3 class="section__head">Укажите навыки, которые по вашему мнению нужны:</h3>
+                <div class="form__item">
+                  <button class="btn btn--add" type="button">Добавить навык <span>+</span></button>
+                </div>
+              </fieldset>
+              <fieldset class="form__wrapper">
                 <div class="text-edit">
                   <div class="text-edit__header">
                     <ul class="text-edit__list">
@@ -157,15 +161,15 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset>
-                <h3>Прикрепите материалы, которые могут помочь в выполнении заказа</h3>
-                <label class="modal__label modal__label--file" for="file">
+              <fieldset class="form__wrapper form__wrapper--last">
+                <h3 class="section__head">Прикрепите материалы, которые могут помочь в выполнении заказа</h3>
+                <label class="file" for="file">
                   Прикрепите фото или видео
                   <input class="visually-hidden" type="file" id="file">
                 </label>
               </fieldset>
-              <div class="profile__control control">
-                <button class="control__btn btn" type="submit">Создать объявление</button>
+              <div class="control">
+                <button class="btn btn--control" type="submit">Создать объявление</button>
               </div>
             </form>
           </div>

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="index">
+<body>
   <header class="header">
     <div class="container">
       <div class="header__nav">
@@ -77,13 +77,14 @@
       <div class="container">
         <div class="faq__wrapper element">
           <div class="faq__header">
-            <h1 class="faq__title">У вас есть <span>Вопросы?</span><br>Поищите тут</h1>
+            <h1 class="main-title">У вас есть <span>Вопросы?</span><br>Поищите тут</h1>
             <div class="faq__help help">
               <div class="help__box">
-                <input class="element help__input" type="text" placeholder="Начните описывать проблему...">
+                <input class="help__input element element--input" type="text" placeholder="Начните описывать проблему...">
+                <button class="help__btn"></button>
               </div>
               <p class="help__text">или</p>
-              <button class="faq__btn help__btn btn">Задать свой вопрос</button>
+              <button class="faq__btn btn">Задать свой вопрос</button>
             </div>
           </div>
           <div class="faq__content">
@@ -215,16 +216,16 @@
     <div class="modal__wrapper">
       <h2 class="modal__title">Задайте ваш вопрос</h2>
       <form class="modal__form" action="#">
-        <input class="modal__input element" type="text" placeholder="Полное имя" required>
-        <input class="modal__input element" type="mail" placeholder="Электронная почта" required>
-        <textarea class="modal__area element" name="modal-area" cols="30" rows="10" placeholder="Здравствуйте, у меня такая проблема..."></textarea>
-        <label class="modal__label modal__label--file" for="file">
+        <input class="modal__input element element--input" type="text" placeholder="Полное имя" required>
+        <input class="modal__input element element--input" type="mail" placeholder="Электронная почта" required>
+        <textarea class="modal__area element element--input" name="modal-area" cols="30" rows="10" placeholder="Здравствуйте, у меня такая проблема..."></textarea>
+        <label class="file" for="file">
           Прикрепите фото или видео
           <input class="visually-hidden" type="file" id="file">
         </label>
-        <div class="modal__control">
+        <div class="modal__control control">
           <button class="modal__btn btn" type="submit">Отправить</button>
-          <button class="modal__cancel btn" type="button">Отмена</button>
+          <button class="modal__cancel btn btn--transparent" type="button">Отмена</button>
         </div>
       </form>
     </div>

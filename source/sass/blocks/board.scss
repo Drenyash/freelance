@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.board__help {
+  .help__box {
+    width: 640px;
+  }
+}
+
 .board__title {
   display: block;
   margin-bottom: 60px;
@@ -105,11 +111,8 @@
 }
 
 .board__control {
+  display: flex;
   justify-content: center;
-  button {
-    font-size: 16px;
-    line-height: 18px;
-  }
 }
 
 .board__btn {

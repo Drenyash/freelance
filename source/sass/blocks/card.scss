@@ -1,7 +1,3 @@
-.card .element {
-  padding: 40px 20px 28px;
-}
-
 .card {
   display: flex;
   align-items: flex-start;
@@ -10,6 +6,7 @@
 
 .card__item {
   display: flex;
+  padding: 30px 20px;
   flex-direction: column;
   max-width: 300px;
   min-width: 300px;
@@ -64,9 +61,6 @@
 
 .card--big {
   margin-top: 24px;
-  .element {
-    padding: 30px 20px;
-  }
   .card__item {
     max-width: 360px;
     min-width: 360px;

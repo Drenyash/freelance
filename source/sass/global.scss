@@ -36,6 +36,16 @@ textarea {
 	}
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.index {
+	background-color: #fff;
+}
+
 .container {
 	display: block;
 	width: 100%;
@@ -59,7 +69,6 @@ textarea {
 }
 
 .element {
-	display: inline-block;
 	background: #FFFFFF;
 	border: 1px solid #F9F9F9;
 	box-shadow: 0px 7px 5px #F5F5F5;
@@ -68,13 +77,33 @@ textarea {
 
 .element--full {
   display: block;
+	width: 100%;
+}
+
+.element--user {
+	border: 5px solid #fff;
+	box-shadow: (0px 7px 10px rgba(191, 191, 191, 0.32));
+	border-radius: 8px;	
+	overflow: hidden;
+}
+
+.element--input {
+	display: block;
+	width: 100%;
+	padding: 18.5px 30.5px;
+	font-size: 18px;
+	color: $textColor;
+	border-radius: 4px;
+	&::placeholder {
+		color: $textLight;
+	}
 }
 
 .btn {
 	display: block;
 	padding: 19.5px 30px;
-	font-size: 18px;
-	line-height: 21px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: 700;
 	white-space: nowrap;
 	color: $white;
@@ -83,6 +112,42 @@ textarea {
 	box-shadow: 0px 4px 25px rgba(0, 118, 203, 0.35);
 	border-radius: 4px;
 	cursor: pointer;
+}
+
+.btn--title {
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.btn--transparent {
+	font-weight: 900;
+	color: $textBlack;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.btn--profile {
+	padding: 21px 44px 21px;
+	border-radius: 10px;
+}
+
+.btn--control {
+	border-radius: 10px;
+}
+
+.btn--add {
+	padding: 12px 21px;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 700;
+	color: $textLight;
+	border: 1px solid #D2D2D2;
+	border-radius: 38px;
+	background-color: #fff;
+	box-shadow: none;
+	span {
+		color: $blue;
+	}
 }
 
 .section__header {
@@ -103,6 +168,25 @@ textarea {
 	line-height: 18px;
 	font-weight: 900;
 	color: $textBlack;
+}
+
+.section__head {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.section__heading {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+.section__text {
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 400;
 }
 
 .menu {
@@ -136,13 +220,6 @@ textarea {
 	}
 }
 
-.section__head {
-	font-size: 18px;
-	line-height: 21px;
-	font-weight: 700;
-	margin-bottom: 15px;
-}
-
 .control {
 	display: flex;
 	.control__cancel {
@@ -154,4 +231,87 @@ textarea {
 		border: transparent;
 		box-shadow: none;
 	}
+}
+.file {
+  position: relative;
+	display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  color: $textLight;
+	cursor: pointer;
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #F9F9F9;
+    box-shadow: 0px 7px 5px #F5F5F5;
+    border-radius: 10px;
+    background-color: #fff;
+    background-image: url('../../img/icons/paperclip_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.main-title {
+	display: inline-block;
+	margin-bottom: 60px;
+	font-size: 48px;
+	line-height: 56px;
+	font-weight: 700;
+	span {
+		color: $blue;
+	}
+}	
+
+.special__wrapper {
+	position: relative;
+  width: 100%;
+	&::after {
+    content: "";
+		position: absolute;
+		top: 50%;
+		right: 35px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../img/icons/select-chevron_icon.svg');
+    background-repeat: no-repeat;
+		background-position: center center;
+		transform: translateY(-50%);
+  }
+}
+
+.special__wrapper--icon {
+	&::after {
+		content: "$";
+		position: absolute;
+		top: 52%;
+		left: 19px;
+		font-size: 18px;
+		line-height: 21px;
+		background: none;
+	}
+}
+
+.price {
+  font-size: 32px;
+  line-height: 27px;
+  font-weight: 500;
+  color: $textColor;
+  span {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 900;
+    color: $textLight;
+  }
+}
+
+.price--blue {
+	color: $blue;
 }

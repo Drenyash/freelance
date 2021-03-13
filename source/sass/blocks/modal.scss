@@ -11,9 +11,6 @@
   height: 100%;
   background: rgba(61, 61, 61, 0.25);
   z-index: 9999;
-  .element {
-    border-radius: 0;
-  }
 }
 
 .modal--active {
@@ -57,46 +54,7 @@
   resize: none;
 }
 
-.modal__label {
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 900;
-  color: $textLight;
-}
-
-.modal__label--file {
-  position: relative;
-  &::before {
-    content: "";
-    display: inline-block;
-    margin-right: 20px;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #F9F9F9;
-    box-shadow: 0px 7px 5px #F5F5F5;
-    border-radius: 10px;
-    background-color: #fff;
-    background-image: url('../../img/icons/paperclip_icon.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    cursor: pointer;
-  }
-}
-
 .modal__btn,
 .modal__cancel {
   display: inline-block;
-}
-
-.modal__cancel {
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 900;
-  color: $textBlack;
-  background-color: transparent;
-  border: transparent;
-  box-shadow: none;
 }

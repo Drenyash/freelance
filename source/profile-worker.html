@@ -19,56 +19,6 @@
           <a class="nav__item" href="#">Примеры</a>
           <a class="nav__item" href="faq.html">FAQ</a>
         </nav>
-        <ul class="user__list user__list--login">
-          <li class="user__item">
-            <a class="user__nav user__nav--add element" href="profile.html">
-              <span class="addOneMore"></span>
-            </a>
-          </li>
-          <li class="user__item">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/icons/mail_icon.svg" alt="">
-            </a>
-          </li>
-          <li class="user__item">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/icons/bell_icon.svg" alt="">
-            </a>
-          </li>
-          <li class="user__item user__item--avatar">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/user.jpg" alt="">
-            </a>
-            <ul class="user__menu menu element">
-              <li class="menu__item">
-                <a class="menu__link" href="">Мои заказы</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">Заявки</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">Транзакции</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">Арбитраж</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">Проф.аккаунт</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">Настройка</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">Выход</a>
-              </li>
-            </ul>
-          </li>
-          <li class="user__item user__item--logout">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/icons/user_icon.svg" alt="">
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </header>
@@ -78,14 +28,20 @@
         <div class="profile__wrapper element element--full">
           <div class="profile__bg"></div>
           <div class="profile__box">
-            <header class="profile__header">
-              <div class="profile__picture-box">
-                <img class="profile__avatar" src="img/resume - 1.jpg" alt="">
-                <a class="btn profile__btn" href="editProfile.html">Редактировать профиль</a>
+            <header class="user">
+              <div class="user__top">
+                <div class="user__image element element--user">
+                  <img src="img/best-freelancer.jpg" alt="">
+                </div>
+                <a class="btn btn--profile" href="editProfile.html">Редактировать профиль</a>
               </div>
-              <h2 class="profile__name">Александра Викторова</h2>
-              <p class="profile__place">Россия, Москва</p>
-              <ul class="profile__stats stats">
+              <div class="user__info">
+                <div class="user__left">
+                  <h2 class="user__name">Александра Викторова</h2>
+                  <p class="user__place">Россия, Москва</p>
+                </div>
+              </div>
+              <ul class="user__stats stats">
                 <li class="stats__item">
                   <h3 class="stats__title">Опыт</h3>
                   <p class="stats__description">Более 1 года</p>
@@ -131,18 +87,18 @@
             </section>
             <section class="profile-about">
               <h3 class="section__head">Обо мне</h3>
-              <p class="about__text">
+              <p class="section__text">
                 Меня зовут Александра и я веб-дизайнер из Москвы. Мне чуть больше 35 лет, замужем на прекрасном человеке и у нас чудесная дочка.
                 А еще боюсь высоты и все проспать. Знакомые предлагают написать еще книгу, о том, как я все успеваю, мне же кажется иначе — многое сделал бы еще сегодня, а уже стемнело. Почти всегда штормит от неграмотных, но и сам периодически допускаю ляпы, за которые стыдно. Как-то совсем неочень отношусь к ребятам, которым лень поздороваться, но еще больше не нравится приветствие «Доброго времени суток». В дизайне меня совсем не радует популярный до сих пор у многих других дизайнеров скевоморфизм, и вместо него я вам сделаю клевый современный дизайн.
               </p>
             </section>
             <section class="profile-skills">
               <h3 class="section__head">Профессиональные навыки</h3>
-                <ul class="profile-skills__list">
-                  <li class="profile-skills__item">3 года работы в среде маркетинга</li>
-                  <li class="profile-skills__item">Коммуникабельность</li>
-                  <li class="profile-skills__item">Пунктуальная</li>
-                  <li class="profile-skills__item">Менее чем за год доросла до уровня сеньора</li>
+                <ul class="list">
+                  <li class="list__item section__text">3 года работы в среде маркетинга</li>
+                  <li class="list__item section__text">Коммуникабельность</li>
+                  <li class="list__item section__text">Пунктуальная</li>
+                  <li class="list__item section__text">Менее чем за год доросла до уровня сеньора</li>
                 </ul>
             </section>
           </div>
@@ -155,29 +111,36 @@
           <h3 class="section__head">Отзывы</h3>
           <div class="reviews__list">
             <div class="reviews__item element element--full">
-              <div class="best__box best__box--reviews">
-                <img class="best__image element" src="img/best-freelancer.jpg" alt="Фото фрилансера «»">
-                <div class="best__info">
-                  <h3 class="best__title">Регина шпик</h3>
-                  <a class="best__text best__text--mail" href="mailto:#hireKytuk@gmail.com">hireShpik@gmail.com</a>
-                  <p class="best__text">5 лет в сервисе</p>
+              <div class="user__wrapper">
+                <div class="user-card">
+                  <div class="user-card__image element element--user">
+                    <img class="user-card__img" src="img/best-freelancer.jpg" alt="Фото фрилансера">
+                  </div>
+                  <div class="user-card__body">
+                    <h3 class="user-card__name">Регина Шпик</h3>
+                    <a class="user-card__text user-card__text--mail" href="mailto:#hireShpik@gmail.com">hireShpik@gmail.com</a>
+                    <p class="user-card__text">5 лет в сервисе</p>
+                  </div>
                 </div>
               </div>
-              <div class="reviews__task">Дизайн внутренних страниц сайта <span class="previews__price">$ 240.00</span></div>
+              <a class="reviews__task" href="#">Дизайн внутренних страниц сайта <span class="previews__price">$ 240.00</span></a>
               <q class="reviews__quote">Заказ выполнила быстро и очень качественно, не первый раз работаю с Алекснадрой, отличное понимание своего дела</q>
             </div>
             <div class="reviews__item element element--full">
-              <div class="best__box best__box--reviews">
-                <img class="best__image element" src="img/best-freelancer.jpg" alt="Фото фрилансера «»">
-                <div class="best__info">
-                  <h3 class="best__title">Алексей Гобарь</h3>
-                  <a class="best__text best__text--mail" href="mailto:#hireKytuk@gmail.com">hireGobar@gmail.com</a>
-                  <p class="best__text">2 года в сервисе</p>
+              <div class="user__wrapper">
+                <div class="user-card">
+                  <div class="user-card__image element element--user">
+                    <img class="user-card__img" src="img/best-freelancer.jpg" alt="Фото фрилансера">
+                  </div>
+                  <div class="user-card__body">
+                    <h3 class="user-card__name">Регина Шпик</h3>
+                    <a class="user-card__text user-card__text--mail" href="mailto:#hireShpik@gmail.com">hireShpik@gmail.com</a>
+                    <p class="user-card__text">5 лет в сервисе</p>
+                  </div>
                 </div>
               </div>
-              <div class="reviews__task">Дизайн версии сайта <span class="previews__price">$ 160.00</span></div>
-              <q class="reviews__quote">Первый раз работал с этим исполнителем, но остались хорошие впечатления, будем работать дальше.<br>
-                Правда в один момент пропала и не отвечала на сообщения весь день, но результат предоставила хороший</q>
+              <a class="reviews__task" href="#">Дизайн внутренних страниц сайта <span class="previews__price">$ 240.00</span></a>
+              <q class="reviews__quote">Заказ выполнила быстро и очень качественно, не первый раз работаю с Алекснадрой, отличное понимание своего дела</q>
             </div>
           </div>
         </div>

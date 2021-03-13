@@ -35,7 +35,11 @@
 .ad__link {
   display: block;
   padding: 40px;
+  padding-right: 65px;
   color: $textColor;
+  &:hover {
+    border-color: $blue;
+  }
 }
 
 .ad__card--freelancers {
@@ -114,17 +118,4 @@
 .ad__price-box {
   width: 100%;
   padding-left: 60px;
-}
-
-.ad__price {
-  font-size: 32px;
-  line-height: 27px;
-  font-weight: 500;
-  color: $blue;
-  &--small {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 900;
-    color: $textLight;
-  }
 }

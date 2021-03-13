@@ -7,35 +7,32 @@
 }
 .skills__list {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  &--big {
-    .skills__item {
-      font-size: 18px;
-    }
-  }
-  &--ad {
-    .skills__item {
-      font-size: 16px;
-      line-height: 18px;
-      font-weight: 900;
-      color: $textColor;
-    }
-  }
 }
-
 .skills__item {
   display: flex;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 400;
   color: $blue;
-}
-.skills__item:not(:last-child) {
-  &::after {
+  &:not(:last-child)::after {
     content: ",";
-    display: block;
-    padding-right: 5px;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.skills__item--button {
+  font-weight: 900;
+  color: $textColor;
+  .skills__link {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    color: $textColor;
+    cursor: pointer;
   }
 }

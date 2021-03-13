@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="index">
+<body>
   <header class="header">
     <div class="container">
       <div class="header__nav">
@@ -77,12 +77,15 @@
       <header class="board__header">
         <h2 class="board__title">Доска исполнителей</h2>
         <div class="board__search">
-          <div class="help__box help__box--big">
-            <input class="element help__input help__input--board" type="text" placeholder="Вёрстка сайта...">
+          <div class="board__help help">
+            <div class="help__box">
+              <input class="help__input element element--input" type="text" placeholder="Введите исполнителя...">
+              <button class="help__btn"></button>
+            </div>
+            <button class="board__selection element">
+              <img src="img/icons//selection_icon.svg" alt="">
+            </button>
           </div> 
-          <button class="board__selection element">
-            <img src="img/icons//selection_icon.svg" alt="">
-          </button>
         </div>
       </header>
       <div class="board__wrapper board__selection-more board__selection-more--close">
@@ -220,8 +223,8 @@
               </ul>
             </fieldset>
             <div class="board__control control">
-              <button class="control__btn btn" type="submit">Сохранить</button>
-              <button class="control__cancel btn" type="button">Отмена</button>
+              <button class="btn btn--control" type="submit">Сохранить</button>
+              <button class="control__cancel btn btn--transparent" type="button">Отмена</button>
             </div>
           </form>
         </div>
@@ -234,29 +237,35 @@
           <div class="board__ad ad">
             <article class="ad__card ad__card--freelancers element element--full">
               <div class="ad__left">
-                <div class="best__item">
-                  <div class="best__box">
-                    <img class="best__image" src="img/best-freelancer.jpg" alt="Фото фрилансера «»">
-                    <div class="best__info">
-                      <h3 class="best__title">Алексей Кутюк</h3>
-                      <a class="best__text best__text--mail" href="mailto:#hireKytuk@gmail.com">hireKytuk@gmail.com</a>
-                      <p class="best__text">3 года в сервисе</p>
-                      <a class="best__reviews" href="#">843 отзыва</a>
+                <div class="user__wrapper">
+                  <div class="user-card">
+                    <div class="user-card__image element element--user">
+                      <img class="user-card__img" src="img/best-freelancer.jpg" alt="Фото фрилансера">
+                    </div>
+                    <div class="user-card__body">
+                      <h3 class="user-card__name">Алексей Кутюк</h3>
+                      <a class="user-card__text user-card__text--mail" href="mailto:#hireKytuk@gmail.com">hireKytuk@gmail.com</a>
+                      <p class="user-card__text">3 года в сервисе</p>
+                      <a class="user-card__text user-card__text--reviews" href="#">843 отзыва</a>
                     </div>
                   </div>
-                  <div class="best-skills">
-                    <h4 class="best-skills__title">Навыки</h4>
+                  <div class="skills">
+                    <h4 class="skills__title">Навыки</h4>
                     <ul class="skills__list">
-                      <li class="skills__item">Программирование</li>
-                      <li class="skills__item">Веб-дизайн</li>
+                      <li class="skills__item">
+                        <a class="skills__link">Программирование</a>
+                      </li>
+                      <li class="skills__item">
+                        <a class="skills__link">Веб-дизайн</a>
+                      </li>
                     </ul>
                   </div>
-                  <a class="board__btn btn" href="#">Заказать</a>
+                  <a class="board__btn btn btn--control" href="#">Заказать</a>
                 </div>
               </div>
               <div class="ad__right">
                 <div class="ad__works">
-                  <h3 class="board__head board__head--works">Лучшие работы</h3>
+                  <h3 class="section__head">Лучшие работы</h3>
                   <ul class="ad__list ad__list--works">
                     <li class="ad__element ad__element--works">
                       <a href="#">
@@ -276,36 +285,41 @@
                   </ul>
                 </div>
                 <div class="ad__price-box">
-                  <p class="ad__price">$25/ час<br><span class="ad__price ad__price--small">от $15</span></p>
+                  <p class="price price--blue">$25/ час<br><span>от $15</span></p>
                 </div>
               </div>
             </article>
             <article class="ad__card ad__card--freelancers element element--full">
               <div class="ad__left">
-                <div class="best__item">
-                  <div class="best__box">
-                    <img class="best__image" src="img/best-freelancer.jpg" alt="Фото фрилансера «»">
-                    <div class="best__info">
-                      <h3 class="best__title">Виктория Прад</h3>
-                      <a class="best__text best__text--mail" href="mailto:#hireKytuk@gmail.com">hireKytuk@gmail.com</a>
-                      <p class="best__text">8 лет в сервисе</p>
-                      <a class="best__reviews" href="#">1369 отзыва</a>
+                <div class="user__wrapper">
+                  <div class="user-card">
+                    <div class="user-card__image element element--user">
+                      <img class="user-card__img" src="img/best-freelancer.jpg" alt="Фото фрилансера">
+                    </div>
+                    <div class="user-card__body">
+                      <h3 class="user-card__name">Алексей Кутюк</h3>
+                      <a class="user-card__text user-card__text--mail" href="mailto:#hireKytuk@gmail.com">hireKytuk@gmail.com</a>
+                      <p class="user-card__text">3 года в сервисе</p>
+                      <a class="user-card__text user-card__text--reviews" href="#">843 отзыва</a>
                     </div>
                   </div>
-                  <div class="best-skills">
-                    <h4 class="best-skills__title">Навыки</h4>
+                  <div class="skills">
+                    <h4 class="skills__title">Навыки</h4>
                     <ul class="skills__list">
-                      <li class="skills__item">Программирование</li>
-                      <li class="skills__item">Веб-дизайн</li>
-                      <li class="skills__item">Прототипирование</li>
+                      <li class="skills__item">
+                        <a class="skills__link">Программирование</a>
+                      </li>
+                      <li class="skills__item">
+                        <a class="skills__link">Веб-дизайн</a>
+                      </li>
                     </ul>
                   </div>
-                  <a class="board__btn btn" href="#">Заказать</a>
+                  <a class="board__btn btn btn--control" href="#">Заказать</a>
                 </div>
               </div>
               <div class="ad__right">
                 <div class="ad__works">
-                  <h3 class="board__head board__head--works">Лучшие работы</h3>
+                  <h3 class="section__head">Лучшие работы</h3>
                   <ul class="ad__list ad__list--works">
                     <li class="ad__element ad__element--works">
                       <a href="#">
@@ -325,35 +339,41 @@
                   </ul>
                 </div>
                 <div class="ad__price-box">
-                  <p class="ad__price">$2500/ мес<br><span class="ad__price ad__price--small">от $15</span></p>
+                  <p class="price price--blue">$2500/ мес<br><span>от $15</span></p>
                 </div>
               </div>
             </article>
             <article class="ad__card ad__card--freelancers element element--full">
               <div class="ad__left">
-                <div class="best__item">
-                  <div class="best__box">
-                    <img class="best__image" src="img/best-freelancer.jpg" alt="Фото фрилансера «»">
-                    <div class="best__info">
-                      <h3 class="best__title">Максим купарь</h3>
-                      <a class="best__text best__text--mail" href="mailto:#hireKytuk@gmail.com">hireKytuk@gmail.com</a>
-                      <p class="best__text">2 года в сервисе</p>
-                      <a class="best__reviews" href="#">84 отзыва</a>
+                <div class="user__wrapper">
+                  <div class="user-card">
+                    <div class="user-card__image element element--user">
+                      <img class="user-card__img" src="img/best-freelancer.jpg" alt="Фото фрилансера">
+                    </div>
+                    <div class="user-card__body">
+                      <h3 class="user-card__name">Алексей Кутюк</h3>
+                      <a class="user-card__text user-card__text--mail" href="mailto:#hireKytuk@gmail.com">hireKytuk@gmail.com</a>
+                      <p class="user-card__text">3 года в сервисе</p>
+                      <a class="user-card__text user-card__text--reviews" href="#">843 отзыва</a>
                     </div>
                   </div>
-                  <div class="best-skills">
-                    <h4 class="best-skills__title">Навыки</h4>
+                  <div class="skills">
+                    <h4 class="skills__title">Навыки</h4>
                     <ul class="skills__list">
-                      <li class="skills__item">Программирование</li>
-                      <li class="skills__item">Веб-дизайн</li>
+                      <li class="skills__item">
+                        <a class="skills__link">Программирование</a>
+                      </li>
+                      <li class="skills__item">
+                        <a class="skills__link">Веб-дизайн</a>
+                      </li>
                     </ul>
                   </div>
-                  <a class="board__btn btn" href="#">Заказать</a>
+                  <a class="board__btn btn btn--control" href="#">Заказать</a>
                 </div>
               </div>
               <div class="ad__right">
                 <div class="ad__works">
-                  <h3 class="board__head board__head--works">Лучшие работы</h3>
+                  <h3 class="section__head">Лучшие работы</h3>
                   <ul class="ad__list ad__list--works">
                     <li class="ad__element ad__element--works">
                       <a href="#">
@@ -373,7 +393,7 @@
                   </ul>
                 </div>
                 <div class="ad__price-box">
-                  <p class="ad__price">$10/ час<br><span class="ad__price ad__price--small">от $15</span></p>
+                  <p class="price price--blue">$10/ час<br><span>от $15</span></p>
                 </div>
               </div>
             </article>

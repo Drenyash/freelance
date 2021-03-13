@@ -6,6 +6,10 @@
   margin-bottom: 10px;
 }
 
+.profile-about {
+  margin-bottom: 30px;
+}
+
 .profile__bg {
   display: block;
   width: 100%;
@@ -49,27 +53,6 @@
 
 .profile__header {
   margin-bottom: 40px;
-}
-
-.profile-skills__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.profile-skills__item {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  line-height: 25px;
-  &::before {
-    content: "";
-    display: inline-block;
-    margin-right: 10px;
-    width: 8px;
-    height: 8px;
-    background-color: $blue;
-    border-radius: 50%;
-  }
 }
 
 .profile--settings {
