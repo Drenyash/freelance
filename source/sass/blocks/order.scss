@@ -22,6 +22,10 @@
   margin-bottom: 40px;
 }
 
+.order__body {
+  width: 100%;
+}
+
 .order__item {
   &:not(:last-child) {
     margin-right: 36px;

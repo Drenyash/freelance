@@ -97,6 +97,17 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $textLight;
+}
+
+.ad__element--price {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $blue;
 }
 
 .ad__element--works {

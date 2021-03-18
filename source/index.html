@@ -19,7 +19,7 @@
           <a class="nav__item" href="#">Примеры</a>
           <a class="nav__item" href="faq.html">FAQ</a>
         </nav>
-        <ul class="user-nav__list user-nav__list--login">
+        <ul class="user-nav__list">
           <li class="user-nav__item">
             <a class="user-nav__link user-nav__link--add" href="create-ad.html">
               <span class="addOneMore"></span>
@@ -115,10 +115,15 @@
           <div class="intro__help help">
             <div class="help__box">
               <input class="help__input element element--input" type="text" placeholder="Какие навыки вы ищите?">
-              <button class="help__btn"></button>
+              <button class="help__btn">
+                <svg class="help__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 19.594C15.4183 19.594 19 16.0123 19 11.594C19 7.17572 15.4183 3.59399 11 3.59399C6.58172 3.59399 3 7.17572 3 11.594C3 16.0123 6.58172 19.594 11 19.594Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.9999 21.5939L16.6499 17.2439" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
             </div>
             <p class="help__text">или</p>
-            <button class="faq__btn btn btn--title">Разместить работу</button>
+            <a class="faq__btn btn btn--title" href="create-ad.html">Разместить работу</a>
           </div>
         </div>
       </div>

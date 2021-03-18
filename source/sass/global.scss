@@ -179,6 +179,10 @@ ul {
 	span {
 		color: $blue;
 	}
+	&:hover {
+		border-radius: 50px;
+		border-color: $blue;
+	}
 }
 
 .section__header {
@@ -282,6 +286,19 @@ ul {
 	}
 }	
 
+.main--reg {
+	height: calc(100vh - 158px);
+	.container {
+		height: 100%;
+	}
+}
+
+.reg {
+	background-image: url('../img/reg_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
 .special__wrapper {
 	position: relative;
   width: 100%;
@@ -349,4 +366,9 @@ input:valid:not(:placeholder-shown) {border-color: #009D52;}
 .disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.full {
+	display: block;
+	height: 100vh;
 }

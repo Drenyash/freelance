@@ -7,6 +7,7 @@
 }
 .skills__list {
   display: flex;
+  flex-wrap: wrap;
 }
 .skills__item {
   display: flex;
@@ -34,5 +35,21 @@
     font-weight: 900;
     color: $textColor;
     cursor: pointer;
+  }
+}
+
+.skills-add {
+  display: block;
+  padding: 11.5px 21.5px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: $textColor;
+  border: 1px solid #D2D2D2;
+  border-radius: 38px;
+  background-color: #fff;
+  cursor: pointer;
+  span {
+    color: $blue;
   }
 }

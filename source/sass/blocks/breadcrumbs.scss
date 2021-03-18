@@ -29,4 +29,7 @@
   line-height: 18px;
   font-weight: 400;
   color: $textBlack;
+  &:hover {
+    color: $blue;
+  }
 }

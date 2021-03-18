@@ -10,6 +10,16 @@
   padding: 60px 0 70px;
 }
 
+.header--register {
+  .header__nav {
+    max-width: 690px;
+    justify-content: center;
+  }
+  .logo {
+    margin-right: 65px;
+  }
+}
+
 .header__nav {
   display: flex;
   align-items: center;

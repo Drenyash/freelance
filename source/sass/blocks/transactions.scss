@@ -82,6 +82,19 @@
   .transactions__item {
     margin-bottom: 33px;
   }
+  .transactions__cards {
+    cursor: pointer;
+  }
+}
+
+.transactions__item input:checked ~ .transactions__cards {
+  .transactions__icon {
+    border-color: $blue;
+    box-shadow: 0px 4px 25px rgba(0, 118, 203, 0.35);
+  }
+  .transactions__cards-text {
+    color: $blue;
+  }
 }
 
 .transactions__cards-text {

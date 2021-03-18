@@ -108,7 +108,7 @@
   }
 }
 
-.faq__rates {
+.faq-rates {
   display: flex;
   margin-top: 60px;
   font-size: 16px;
@@ -121,6 +121,18 @@
     height: 24px;
     &:first-child {
       margin-left: 30px;
+    }
+  }
+}
+
+.faq-rates__icon {
+  stroke: #D2D2D2;
+}
+
+.faq-rates__link {
+  &:hover {
+    .faq-rates__icon {
+      stroke: $blue;
     }
   }
 }

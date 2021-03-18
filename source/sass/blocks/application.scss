@@ -1,5 +1,6 @@
 .application {
   display: block;
+  margin-bottom: 20px;
   width: 280px;
   &:not(:last-child) {
     margin-right: 20px;
@@ -8,7 +9,8 @@
 
 .application__wrapper {
   display: flex;
-  margin-bottom: 68px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 
 .application__info {

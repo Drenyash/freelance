@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="index full reg">
+  <header class="header header--register">
+    <div class="container">
+      <div class="header__nav">
+        <a class="header__logo logo" href="index.html">Лого.</a>
+        <nav class="nav">
+          <a class="nav__item" href="#">О нас</a>
+          <a class="nav__item" href="#">Как это работает?</a>
+          <a class="nav__item" href="#">Примеры</a>
+          <a class="nav__item" href="#">FAQ</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main main--reg">
+    <div class="container">
+      <div class="register">
+        <div class="register__wrapper">
+          <h1 class="register__title">Настройка аккаунта</h1>
+          <p class="register__description">Укажите дополнительную информацию о <br> вас</p>
+          <div class="tabs">
+            <ul class="tab-header">
+              <li class="tab-header__item tab-header__active" data-tab="1"></li>
+              <li class="tab-header__item" data-tab="2"></li>
+              <li class="tab-header__item" data-tab="3"></li>
+            </ul>
+            <ul class="tab-content">
+              <li class="tab-content__item tab-content__active" data-tab="1">
+                <form class="register__form" action="#" method="POST">
+                  <input class="register__input" type="text" placeholder="Ваше Фамилия">
+                  <input class="register__input" type="date" placeholder="Дата рождения">
+                  <input class="register__input" type="text" placeholder="Страна">
+                  <input class="register__input register__input--last" type="text" placeholder="Город">
+                </form>
+              </li>
+              <li class="tab-content__item" data-tab="2">
+                <div class="register-type">
+                  <div class="register-type__item">
+                    <input class="visually-hidden" type="radio" id="account-type-1" name="account-type">
+                    <label class="register-type__label register-type__label--freelancer" for="account-type-1">
+                      <h2 class="register-type__title">Исполнитель</h2>
+                      <p class="register-type__description">Краткое описание</p>
+                    </label>
+                  </div>
+                  <div class="register-type__item">
+                    <input class="visually-hidden" type="radio" id="account-type-2" name="account-type">
+                    <label class="register-type__label register-type__label--employer" for="account-type-2">
+                      <h2 class="register-type__title">Работодатель</h2>
+                      <p class="register-type__description">Краткое описание</p>
+                    </label>
+                  </div>
+                </div>
+              </li>
+              <li class="tab-content__item" data-tab="3">
+                <div class="register-activity">
+                  <div class="register-activity__box special__wrapper">
+                    <select class="register-activity__item" name="" id="">
+                      <option value="0">Дизайн</option>
+                    </select>
+                  </div>
+                  <div class="register-activity__box special__wrapper">
+                    <select class="register-activity__item" name="" id="">
+                      <option value="0">Веб-дизайн</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="tab-content__item" data-tab="4">
+                <div class="register-skills">
+                  <button class="skills-add">Добавить навык <span>+</span></button>
+                </div>
+              </li>
+            </ul>
+            <div class="tab-control">
+              <button class="prev__btn">
+                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path d="M12.4111 22.0747L3.41113 13.0747L12.4111 4.07471" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="15" height="24" fill="white" transform="translate(0.337891 0.45459)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <button class="next__btn btn btn--control">Дальше</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/tabs.js"></script>
+</body>
+</html>

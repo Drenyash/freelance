@@ -23,11 +23,21 @@
   margin-bottom: 40px;
 }
 
+.board__icon {
+  stroke: #D2D2D2;
+}
+
 .board__selection {
   display: block;
   margin-left: 16px;
   padding: 18px 22px;
   cursor: pointer;
+  &:hover {
+    border-color: $blue;
+    .board__icon {
+      stroke: $blue;
+    }
+  }
 }
 
 .board__wrapper {
@@ -43,6 +53,10 @@
   border-radius: 20px;
 }
 
+.board__wrapper--big {
+  padding: 60px;
+}
+
 .board__selection-more--close {
   display: none;
 }
@@ -56,6 +70,10 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+
+.board__content {
+  width: 100%;
 }
 
 .board__count {
