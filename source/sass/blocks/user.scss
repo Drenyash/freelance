@@ -56,3 +56,35 @@
   line-height: 18px;
   font-weight: 500;
 }
+
+.user-card__name-link {
+  position: relative;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $textColor;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    right: -15px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url('../../img/icons/external-link.svg');
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.user-card__link {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: $blue;
+  span {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}

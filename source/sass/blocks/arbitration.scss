@@ -1,0 +1,94 @@
+.arbitration__main {
+  margin-bottom: 20px;
+}
+
+.arbitration__text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #B0B0B0;
+  a {
+    color: $blue;
+  }
+}
+
+.arbitration__text--applications {
+  margin-bottom: 40px;
+}
+
+.arbitration__text--bold {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  max-width: 560px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $textColor;
+}
+
+.arbitration__warning {
+  margin-bottom: 60px;
+}
+
+.arbitration__btn {
+  display: inline-block;
+  padding: 19.5px 60px;
+}
+
+.arbitration__head {
+  display: inline-block;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.arbitration__wrapper {
+  margin-bottom: 20px;
+  width: 360px;
+  .arbitration__input {
+    margin-bottom: 0;
+  }
+}
+
+.arbitration__input {
+  margin-bottom: 20px;
+  padding: 18.5px 20px;
+  width: 360px;
+  background: #FFFFFF;
+  border: 1px solid #F9F9F9;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 5px #F5F5F5;
+  appearance: none;
+}
+
+.arbitration__area {
+  width: 520px;
+  height: 202px;
+  padding: 18.5px 20px;
+  background: #FFFFFF;
+  border: 1px solid #F9F9F9;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 5px #F5F5F5;
+  resize: none;
+  .text-edit__max-value {
+    bottom: 20px;
+    right: 20px;
+  }
+  .text-edit__area {
+    height: 130px;
+  }
+}
+
+.arbitration__element {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1.5px solid #F9F9F9;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 5px #F5F5F5;
+  border-radius: 10px;
+}

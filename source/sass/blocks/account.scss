@@ -1,0 +1,122 @@
+.account {
+  display: flex;
+}
+
+.account__icon {
+  fill: #535353;
+}
+
+.account__item {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 25px;
+  margin-right: 70px;
+  max-width: 312px;
+  height: 604px;
+  background: #FFFFFF;
+  border: 1.5px solid #F9F9F9;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 5px #F5F5F5;
+  border-radius: 10px;
+  transition: 0.2s;
+  &:hover {
+    background: linear-gradient(180deg, #58CFFF 0%, #00B6FF 100%);
+    border: 1.5px solid #F9F9F9;
+    color: #fff;
+    box-shadow: 0px 7px 10px rgba(191, 191, 191, 0.32);
+    .account__price {
+      color: #fff;
+      &::after {
+        background-color: #fff;
+      }
+    }
+    .account__text {
+      color: #fff;
+    }
+    .account__btn {
+      box-shadow: 0px 4px 25px rgba(0, 118, 203, 0.35);
+      color: $blue;
+      border-color: #fff;
+    }
+    .account__icon {
+      fill: #fff;
+    }
+  }
+}
+
+.account__item--small {
+  height: 475px;
+}
+
+.account__elem {
+  margin-bottom: 14px;
+  &:not(:last-child) {
+    margin-right: 7px;
+  }
+}
+
+.account__title {
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.account__price {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 37px;
+  font-weight: 500;
+  color: $blue;
+  transition: 0.2s;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #E9EAF2;
+  }
+}
+
+.account__text {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: $textLight;
+  transition: 0.2s;
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.account__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.account__btn {
+  display: inline-block;
+  padding: 20px 63px;
+  margin: 0 auto;
+  margin-top: auto;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  color: $textBlack;
+  background: #FFFFFF;
+  border: 1px solid #B0B0B0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.account__list {
+  display: flex;
+}

@@ -10,8 +10,12 @@
   font-weight: 700;
   line-height: 21px;
   color: $textLight;
+  transition: 0.2s;
   &:last-child {
     margin-right: 0;
+  }
+  &:hover {
+    color: $blue;
   }
 }
 

@@ -5,6 +5,10 @@
   height: 180px;
 }
 
+.ad__section {
+  margin-bottom: 20px;
+}
+
 .ad__task {
   margin-bottom: 15px;
   font-size: 24px;
@@ -89,20 +93,20 @@
 }
 
 .ad__element {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 700;
-  color: $textLight;
-  &--price {
-    color: $blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.ad__element--works {
+  &:not(:last-child) {
+    margin-right: 24px;
   }
-  &--works {
+  a {
     display: block;
     width: 160px;
     height: 200px;
-    &:not(:last-child) {
-      margin-right: 24px;
-    }
   }
 }
 
@@ -117,5 +121,14 @@
 
 .ad__price-box {
   width: 100%;
+  max-width: 230px;
   padding-left: 60px;
+}
+
+.ad__price {
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $blue;
 }

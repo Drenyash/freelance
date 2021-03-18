@@ -1,0 +1,170 @@
+.transactions__top {
+  margin-bottom: 70px;
+}
+
+.transactions__wrapper {
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .special__wrapper {
+    display: inline-block;
+    max-width: 135px;
+  }
+}
+
+.transactions__wrapper--operations {
+  display: flex;
+}
+
+.operations__element {
+  margin-right: 80px;
+}
+
+.transactions__list {
+  display: flex;
+}
+
+.transactions__list--cards {
+  max-width: 550px;
+  flex-wrap: wrap;
+}
+
+.transactions__item {
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
+}
+
+.transactions__item--active {
+  .transactions__link {
+    color: $textColor;
+  }
+}
+
+.transactions__link {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $textLight;
+  &:hover {
+    color: $textColor;
+  }
+}
+
+.transactions__icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 113px;
+  height: 77px;
+  background: #FFFFFF;
+  border: 1px solid #F9F9F9;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 5px #F5F5F5;
+  border-radius: 6px;
+}
+
+.transactions__item {
+  &:hover {
+    .transactions__icon {
+      border-color: $blue;
+    	box-shadow: 0px 4px 25px rgba(0, 118, 203, 0.35);
+    }
+    .transactions__cards-text {
+      color: $blue;
+    }
+  }
+}
+
+.transactions__list--cards {
+  max-width: 600px;
+  .transactions__item {
+    margin-bottom: 33px;
+  }
+}
+
+.transactions__cards-text {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: $textLight;
+}
+
+.transactions__input {
+  margin-right: 32px;
+  padding: 18.5px 30px;
+  border-radius: 4px;
+}
+
+.transactions__select {
+  margin-right: 32px;
+  padding: 18.5px 64px 18.5px 30px;
+  border-radius: 4px;
+  appearance: none;
+  font-weight: 900;
+  color: $textColor;
+}
+
+.transactions__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  width: 420px;
+  height: 240px;
+}
+
+.transactions__card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transactions__card-title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 900;
+  color: $textLight;
+}
+
+.transactions__card-number {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
+  color: $textLight;
+}
+
+.transactions__card-name,
+.transactions__card-date {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: $textLight;
+}
+
+.transactions__card-icon {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.operations__link {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $blue;
+}
+
+.transactions__img {
+  max-width: 64px;
+  margin-right: 12px;
+}
+
+.transactions__name {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,10 @@
+.work__list {
+  display: flex;
+}
+.work__item {
+  max-width: 123px;
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+.work__link {}

@@ -1,0 +1,46 @@
+.request {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.request .user-card {
+  margin-bottom: 0;
+}
+
+.request__wrapper {
+  padding: 30px 20px;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.request__wrapper:hover {
+  border-color: $blue;
+}
+
+.request__wrapper--small {
+  padding: 20px;
+  cursor: auto;
+  &:hover {
+    border-color: #F9F9F9;
+  }
+}
+
+.request__wrapper--active {
+  border-color: $blue;
+}
+
+.request__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.request__control {
+  margin-left: 20px;
+}
+
+.request__control--disable {
+  display: none;
+}

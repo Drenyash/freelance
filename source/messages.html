@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="index">
+<body>
   <header class="header">
     <div class="container">
       <div class="header__nav">
@@ -19,44 +19,64 @@
           <a class="nav__item" href="#">Примеры</a>
           <a class="nav__item" href="faq.html">FAQ</a>
         </nav>
-        <ul class="user__list">
-          <li class="user__item">
-            <a class="user__nav user__nav--add element" href="profile.html">
+        <ul class="user-nav__list user-nav__list--login">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--add" href="create-ad.html">
               <span class="addOneMore"></span>
             </a>
           </li>
-          <li class="user__item">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/icons/mail_icon.svg" alt="">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="messages.html">
+              <svg class="user-nav__icon" width="31" height="26" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M4.4043 1.23364H20.4043C21.5043 1.23364 22.4043 2.13364 22.4043 3.23364V15.2336C22.4043 16.3336 21.5043 17.2336 20.4043 17.2336H4.4043C3.3043 17.2336 2.4043 16.3336 2.4043 15.2336V3.23364C2.4043 2.13364 3.3043 1.23364 4.4043 1.23364Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.4043 3.23364L12.4043 10.2336L2.4043 3.23364" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="23" height="19" fill="white" transform="translate(0.478516)"/>
+                </clipPath>
+                </defs>
+              </svg>
             </a>
           </li>
-          <li class="user__item">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/icons/bell_icon.svg" alt="">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="notifications.html" disabled>
+              <svg class="user-nav__icon" width="24" height="26" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                <path d="M19.0918 8.39233C19.0918 6.53582 18.3543 4.75534 17.0415 3.44259C15.7288 2.12983 13.9483 1.39233 12.0918 1.39233C10.2353 1.39233 8.4548 2.12983 7.14205 3.44259C5.82929 4.75534 5.0918 6.53582 5.0918 8.39233C5.0918 16.559 1.5918 18.8923 1.5918 18.8923H22.5918C22.5918 18.8923 19.0918 16.559 19.0918 8.39233Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.11 23.5591C13.9049 23.9127 13.6105 24.2062 13.2563 24.4102C12.9021 24.6142 12.5005 24.7216 12.0917 24.7216C11.6829 24.7216 11.2813 24.6142 10.9271 24.4102C10.5729 24.2062 10.2785 23.9127 10.0734 23.5591" stroke-width="2"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="24" height="26" fill="white" transform="translate(0.0917969 0.059082)"/>
+                </clipPath>
+                </defs>
+              </svg>                
             </a>
           </li>
-          <li class="user__item user__item--avatar">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/user.jpg" alt="">
+          <li class="user-nav__item user__item--avatar">
+            <a class="user-nav__link user-nav__link--active user-nav__link--avatar" href="profile.html">
+              <img src="img/best-freelancer.jpg" alt="">
             </a>
             <ul class="user__menu menu element">
               <li class="menu__item">
                 <a class="menu__link" href="">Мои заказы</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Заявки</a>
+                <a class="menu__link" href="order-list.html">Заявки</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Транзакции</a>
+                <a class="menu__link" href="transactions.html">Транзакции</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Арбитраж</a>
+                <a class="menu__link" href="arbitration.html">Арбитраж</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Проф.аккаунт</a>
+                <a class="menu__link" href="professional.html">Проф.аккаунт</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Настройка</a>
+                <a class="menu__link" href="profile.html">Настройка</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">Выход</a>
@@ -64,8 +84,11 @@
             </ul>
           </li>
           <li class="user__item user__item--logout">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/icons/user_icon.svg" alt="">
+            <a class="user-nav__link" href="profile.html">
+              <svg class="user-nav__icon" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1059 12.7601C17.2478 12.7601 19.7948 10.2131 19.7948 7.07121C19.7948 3.92933 17.2478 1.38232 14.1059 1.38232C10.964 1.38232 8.41699 3.92933 8.41699 7.07121C8.41699 10.2131 10.964 12.7601 14.1059 12.7601Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23.7556 25.5333C24.8601 25.5333 25.7556 24.6379 25.7556 23.5333V22.6889C25.7556 21.1801 25.1562 19.7331 24.0893 18.6662C23.0224 17.5994 21.5755 17 20.0667 17H8.68889C7.1801 17 5.73311 17.5994 4.66624 18.6662C3.59936 19.7331 3 21.1801 3 22.6889C3 22.6889 3 22.0333 3 23.5333C3 25 4.66624 25.5333 5 25.5333C5.5 25.5333 23.1361 25.5333 23.7556 25.5333Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </a>
           </li>
         </ul>
@@ -74,72 +97,106 @@
   </header>
   <main class="main">
     <div class="container">
-      <h1><span>Сообщения</span><br>Все что пишут вам, прилетает сюда</h1>
-      <p>Все ваши сообщения и ответы всегда хранятся на этой странице.</p>
-      <div>
-        <ul>
-          <li>
-            <a href="#">
-              <img src="" alt="">
-              <div>
-                <h4>Регина Шпик</h4>
-                <a href="#">hireShpik@gmail.com</a>
-                <p>5 лет в сервисе</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="" alt="">
-              <div>
-                <h4>Максим Тычкин</h4>
-                <a href="#">hireShpik@gmail.com</a>
-                <p>1 год в сервисе</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="" alt="">
-              <div>
-                <h4>Ксения Потапова</h4>
-                <a href="#">hireShpik@gmail.com</a>
-                <p>3 месяца в сервисе</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="" alt="">
-              <div>
-                <h4>Ян Цой</h4>
-                <a href="#">hireShpik@gmail.com</a>
-                <p>15 часов в сервисе</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div>
-          <p>Здравствуйте, давайте я пришлю вам тестовый экран, что бы у вас пропали сомнения. Согласны?</p>
-          <time>16:23, 20.11.21</time>
+      <h1 class="messages__title main-title"><span>Сообщения</span><br>Все что пишут вам, прилетает сюда</h1>
+      <p class="messages__text">Все ваши сообщения и ответы всегда хранятся на этой странице.</p>
+      <div class="messages__wrapper">
+        <div class="">
+          <ul class="messages__list">
+            <li class="messages__item">
+              <a class="messages__link" href="#">
+                <div class="user-card">
+                  <div class="user-card__image element element--user">
+                    <img class="user-card__img" src="img/best-freelancer.jpg" alt="Фото фрилансера">
+                  </div>
+                  <div class="user-card__body">
+                    <h3 class="user-card__name">Алексей Кутюк</h3>
+                    <p class="user-card__text user-card__text--mail">hireKytuk@gmail.com</p>
+                    <p class="user-card__text">3 года в сервисе</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="messages__item">
+              <a class="messages__link" href="#">
+                <div class="user-card">
+                  <div class="user-card__image element element--user">
+                    <img class="user-card__img" src="img/best-freelancer.jpg" alt="Фото фрилансера">
+                  </div>
+                  <div class="user-card__body">
+                    <h3 class="user-card__name">Алексей Кутюк</h3>
+                    <p class="user-card__text user-card__text--mail">hireKytuk@gmail.com</p>
+                    <p class="user-card__text">3 года в сервисе</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="messages__item">
+              <a class="messages__link" href="#">
+                <div class="user-card">
+                  <div class="user-card__image element element--user">
+                    <img class="user-card__img" src="img/best-freelancer.jpg" alt="Фото фрилансера">
+                  </div>
+                  <div class="user-card__body">
+                    <h3 class="user-card__name">Алексей Кутюк</h3>
+                    <p class="user-card__text user-card__text--mail">hireKytuk@gmail.com</p>
+                    <p class="user-card__text">3 года в сервисе</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="messages__item">
+              <a class="messages__link" href="#">
+                <div class="user-card">
+                  <div class="user-card__image element element--user">
+                    <img class="user-card__img" src="img/best-freelancer.jpg" alt="Фото фрилансера">
+                  </div>
+                  <div class="user-card__body">
+                    <h3 class="user-card__name">Алексей Кутюк</h3>
+                    <p class="user-card__text user-card__text--mail">hireKytuk@gmail.com</p>
+                    <p class="user-card__text">3 года в сервисе</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div>
-          <p>Привет, давай попробуем, отправь мне в течении недели работу.</p>
-          <time>16:36, 20.11.21</time>
-        </div>
-        <div>
-          <p>ОО, окей, ожидайте =)</p>
-          <time>16:23, 20.11.21</time>
-        </div>
-        <div>
-           <div>
-              <input type="text">
-              <button>Смайлики</button>
-              <button>Вложения</button>
-           </div>
-           <button>Отправить</button>
+        <div class="messages__chat">
+          <div class="message__block message__block--left">
+            <p>Здравствуйте, давайте я пришлю вам тестовый экран, что бы у вас пропали сомнения. Согласны?</p>
+            <time class="messages__time">16:23, 20.11.21</time>
+          </div>
+          <div class="message__block message__block--right">
+            <p>Привет, давай попробуем, отправь мне в течении недели работу.</p>
+            <time class="messages__time">16:36, 20.11.21</time>
+          </div>
+          <div class="message__block message__block--left">
+            <p>ОО, окей, ожидайте =)</p>
+            <time class="messages__time">16:23, 20.11.21</time>
+          </div>
+          <div class="messages__control">
+             <div class="chat__wrapper">
+                <input class="chat__input" type="text" placeholder="Напишите сообщение...">
+                <button class="chat__btn chat__btn--smile">
+                  <svg class="chat__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22.9506C17.5228 22.9506 22 18.4734 22 12.9506C22 7.42771 17.5228 2.95056 12 2.95056C6.47715 2.95056 2 7.42771 2 12.9506C2 18.4734 6.47715 22.9506 12 22.9506Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 14.9506C8 14.9506 9.5 16.9506 12 16.9506C14.5 16.9506 16 14.9506 16 14.9506" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9.95056H9.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9.95056H15.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button class="chat__btn chat__btn--paper">
+                  <svg class="chat__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.4403 12.0006L12.2503 21.1906C11.1244 22.3164 9.59747 22.9489 8.00529 22.9489C6.41311 22.9489 4.88613 22.3164 3.76029 21.1906C2.63445 20.0647 2.00195 18.5378 2.00195 16.9456C2.00195 15.3534 2.63445 13.8264 3.76029 12.7006L12.9503 3.51057C13.7009 2.76001 14.7188 2.33835 15.7803 2.33835C16.8417 2.33835 17.8597 2.76001 18.6103 3.51057C19.3609 4.26114 19.7825 5.27912 19.7825 6.34057C19.7825 7.40203 19.3609 8.42001 18.6103 9.17057L9.41029 18.3606C9.03501 18.7359 8.52602 18.9467 7.99529 18.9467C7.46456 18.9467 6.95557 18.7359 6.58029 18.3606C6.20501 17.9853 5.99418 17.4763 5.99418 16.9456C5.99418 16.4148 6.20501 15.9059 6.58029 15.5306L15.0703 7.05057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+             </div>
+             <button class="chat__send">
+              <svg class="chat__icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.1406 2.5L11.1406 13.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.1406 2.5L15.1406 22.5L11.1406 13.5L2.14062 9.5L22.1406 2.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+             </button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,23 @@
 .profile__breadcrumbs {
   margin-bottom: 20px;
 }
+.profile__wrapper {
+  border-radius: 20px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.profile__wrapper--clear {
+  padding: 60px;
+  width: 640px;
+  margin: 0 auto;
+  margin-bottom: 47px;
+}
+
+.profile__heading {
+  margin-bottom: 50px;
+}
 
 .profile--element {
   margin-bottom: 10px;

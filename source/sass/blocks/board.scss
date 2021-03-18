@@ -31,7 +31,9 @@
 }
 
 .board__wrapper {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 25px 39px;
   width: 100%;
   margin-bottom: 38px;

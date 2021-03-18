@@ -1,0 +1,49 @@
+.application {
+  display: block;
+  width: 280px;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.application__wrapper {
+  display: flex;
+  margin-bottom: 68px;
+}
+
+.application__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.application__text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $textColor;
+}
+
+.application__title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: $textBlack;
+  span {
+    font-weight: 500;
+    color: $textColor;
+  }
+}
+
+.application__text--rejected {
+  color: #EA4444;
+}
+
+.application__text--review {
+  color: $textLight;
+}
+
+.application__text--accepted {
+  color: #00DF70;
+}

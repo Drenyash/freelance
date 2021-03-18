@@ -1,0 +1,115 @@
+.progress__section {
+  margin-bottom: 20px;
+}
+
+.progress__wrap {
+  display: flex;
+}
+
+.progress__head {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 32px;
+    width: 30px;
+    height: 28px;
+    background-image: url('../../img/icons/check_icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.progress__head--light {
+  color: $textLight;
+  &::before {
+    background-image: url('../../img/icons/check_icon-gray.svg');
+  }
+}
+
+.progress__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 10px 10px 60px;
+  width: 100%;
+  min-height: 240px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12px;
+    display: block;
+    height: 100%;
+    width: 2px;
+    background-color: #D2D2D2;
+  }
+}
+
+.progress__price {
+  margin-bottom: 10px;
+}
+
+.progress__price--current {
+  margin-bottom: 30px;
+}
+
+.progress__text {
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $textLight;
+  strong {
+    font-weight: 700;
+    color: $textColor;
+  }
+}
+
+.progress__img {
+  width: 160px;
+  height: 220px;
+  margin-right: 20px;
+}
+
+.progress__info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+
+.progress__text--reload {
+  margin-bottom: 22px;
+}
+
+.progress__text--black {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  margin-bottom: 4px;
+  color: $textColor;
+}
+
+.progress__time {
+  font-size: 32px;
+  line-height: 37px;
+  font-weight: 500;
+  color: $blue;
+}
+
+.progress__box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.progress__link {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $textBlack;
+  text-decoration: underline;
+}

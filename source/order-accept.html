@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="index">
+<body>
   <header class="header">
     <div class="container">
       <div class="header__nav">
@@ -19,44 +19,64 @@
           <a class="nav__item" href="#">Примеры</a>
           <a class="nav__item" href="faq.html">FAQ</a>
         </nav>
-        <ul class="user__list user__list--login">
-          <li class="user__item">
-            <a class="user__nav user__nav--add element" href="profile.html">
+        <ul class="user-nav__list user-nav__list--login">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--add" href="create-ad.html">
               <span class="addOneMore"></span>
             </a>
           </li>
-          <li class="user__item">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/icons/mail_icon.svg" alt="">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="messages.html">
+              <svg class="user-nav__icon" width="31" height="26" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M4.4043 1.23364H20.4043C21.5043 1.23364 22.4043 2.13364 22.4043 3.23364V15.2336C22.4043 16.3336 21.5043 17.2336 20.4043 17.2336H4.4043C3.3043 17.2336 2.4043 16.3336 2.4043 15.2336V3.23364C2.4043 2.13364 3.3043 1.23364 4.4043 1.23364Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.4043 3.23364L12.4043 10.2336L2.4043 3.23364" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="23" height="19" fill="white" transform="translate(0.478516)"/>
+                </clipPath>
+                </defs>
+              </svg>
             </a>
           </li>
-          <li class="user__item">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/icons/bell_icon.svg" alt="">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="notifications.html" disabled>
+              <svg class="user-nav__icon" width="24" height="26" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                <path d="M19.0918 8.39233C19.0918 6.53582 18.3543 4.75534 17.0415 3.44259C15.7288 2.12983 13.9483 1.39233 12.0918 1.39233C10.2353 1.39233 8.4548 2.12983 7.14205 3.44259C5.82929 4.75534 5.0918 6.53582 5.0918 8.39233C5.0918 16.559 1.5918 18.8923 1.5918 18.8923H22.5918C22.5918 18.8923 19.0918 16.559 19.0918 8.39233Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.11 23.5591C13.9049 23.9127 13.6105 24.2062 13.2563 24.4102C12.9021 24.6142 12.5005 24.7216 12.0917 24.7216C11.6829 24.7216 11.2813 24.6142 10.9271 24.4102C10.5729 24.2062 10.2785 23.9127 10.0734 23.5591" stroke-width="2"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="24" height="26" fill="white" transform="translate(0.0917969 0.059082)"/>
+                </clipPath>
+                </defs>
+              </svg>                
             </a>
           </li>
-          <li class="user__item user__item--avatar">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/user.jpg" alt="">
+          <li class="user-nav__item user__item--avatar">
+            <a class="user-nav__link user-nav__link--active user-nav__link--avatar" href="profile.html">
+              <img src="img/best-freelancer.jpg" alt="">
             </a>
             <ul class="user__menu menu element">
               <li class="menu__item">
                 <a class="menu__link" href="">Мои заказы</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Заявки</a>
+                <a class="menu__link" href="order-list.html">Заявки</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Транзакции</a>
+                <a class="menu__link" href="transactions.html">Транзакции</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Арбитраж</a>
+                <a class="menu__link" href="arbitration.html">Арбитраж</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Проф.аккаунт</a>
+                <a class="menu__link" href="professional.html">Проф.аккаунт</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Настройка</a>
+                <a class="menu__link" href="profile.html">Настройка</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">Выход</a>
@@ -64,8 +84,11 @@
             </ul>
           </li>
           <li class="user__item user__item--logout">
-            <a class="user__nav element" href="profile.html">
-              <img src="img/icons/user_icon.svg" alt="">
+            <a class="user-nav__link" href="profile.html">
+              <svg class="user-nav__icon" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1059 12.7601C17.2478 12.7601 19.7948 10.2131 19.7948 7.07121C19.7948 3.92933 17.2478 1.38232 14.1059 1.38232C10.964 1.38232 8.41699 3.92933 8.41699 7.07121C8.41699 10.2131 10.964 12.7601 14.1059 12.7601Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23.7556 25.5333C24.8601 25.5333 25.7556 24.6379 25.7556 23.5333V22.6889C25.7556 21.1801 25.1562 19.7331 24.0893 18.6662C23.0224 17.5994 21.5755 17 20.0667 17H8.68889C7.1801 17 5.73311 17.5994 4.66624 18.6662C3.59936 19.7331 3 21.1801 3 22.6889C3 22.6889 3 22.0333 3 23.5333C3 25 4.66624 25.5333 5 25.5333C5.5 25.5333 23.1361 25.5333 23.7556 25.5333Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </a>
           </li>
         </ul>
@@ -78,123 +101,136 @@
         <div class="profile__wrapper element element--full">
           <div class="profile__bg"></div>
           <div class="profile__box">
-            <header>
-              <div>
-                <img src="" alt="">
-              </div>
-              <div>
-                <div>
-                  <h3>Анатолий Сульянов</h3>
-                  <p>Россия, Москва</p>
+            <header class="user">
+              <div class="user__top">
+                <div class="user__image element element--user">
+                  <img src="img/best-freelancer.jpg" alt="">
                 </div>
-                <div>
-                  <p>Опубликовано 3 дня назад</p>
-                  <p>Действительно ещ  27 дней</p>
+              </div>
+              <div class="user__info">
+                <div class="user__left">
+                  <h2 class="user__name">Анатолий Сульянов</h2>
+                  <p class="user__place">Россия, Москва</p>
+                </div>
+                <div class="user__right">
+                  <p class="user__post">Опубликовано 3 дня назад</p>
+                  <p class="user__valid">Действительно ещё 27 дней</p>
                 </div>
               </div>
             </header>
-            <div>
-              <div>
-                <h3>Создание сайта под ключ <span>#91723</span></h3>
-                <p>$ 25/ час<br><span>3 заявки</span></p>
+            <div class="ad__box">
+              <div class="ad__element">
+                <h3 class="section__heading">Создание сайта под ключ <span class="article">#91723</span></h3>
+                <p class="price price--small">$ 25/ час<br><span>3 заявки</span></p>
               </div>
-              <div>
-                <h4>Требования</h4>
-                <ul>
-                  <li>Уровень навыков junior или выше</li>
-                  <li>Отличное владение русским языком</li>
+              <div class="ad__section">
+                <h4 class="section__head">Требования</h4>
+                <ul class="list">
+                  <li class="list__item section__text">Уровень навыков junior или выше</li>
+                  <li class="list__item section__text">Отличное владение русским языком</li>
                 </ul>
               </div>
-              <div>
-                <h4>Навыки</h4>
-                <ul>
-                  <li>Программирование</li>
-                  <li>Фигма</li>
-                  <li>Прототипирование</li>
+              <div class="ad__section">
+                <h4 class="section__head">Навыки</h4>
+                <ul class="list list--btn">
+                  <li class="list__item">Программирование</li>
+                  <li class="list__item">Фигма</li>
+                  <li class="list__item">Прототипирование</li>
                 </ul>
               </div>
-              <div>
-                <h4>Описание</h4>
-                <p>Нужно создать сайт от дизайна до верстки. Имется макет, но очень сырой. Все кто имеют знакомых специалистов, которые могу делать одну из частей, писать на почту. </p>
+              <div class="ad__section">
+                <h4 class="section__head">Описание</h4>
+                <p class="section__text">Нужно создать сайт от дизайна до верстки. Имется макет, но очень сырой. Все кто имеют знакомых специалистов, которые могу делать одну из частей, писать на почту. </p>
               </div>
               <div>
-                <h4>Прикрепленные файлы</h4>
+                <h4 class="section__head">Прикрепленные файлы</h4>
               </div>
             </div>
           </div>
         </div>
         <div class="profile__wrapper element element--full">
           <div class="profile__box">
-            <h3>Прогресс выполнения заказа</h3>
-            <article>
-              <div>
-                <p>Выбор исполнителя</p>
-              </div>
-              <div>
-                <div>
-                  <img src="" alt="">
-                  <div>
-                    <h4>Регина Шпик</h4>
-                    <a href="#">hireShpik@gmail.com</a>
-                    <p>5 лет в сервисе</p>
-                  </div>
-                  <button>самолётик</button>
+            <h3 class="section__heading">Прогресс выполнения заказа</h3>
+            <div class="progress">
+              <article class="progress__section">
+                <div class="progress__top">
+                  <p class="progress__head section__head">Выбор исполнителя</p>
                 </div>
-              </div>
-            </article> 
-            <article>
-              <div>
-                <p>Оговоренные сроки и стоимость работы</p>
-              </div>
-              <div>
-                <p>$240.00</p>
-                <p>Срок выполнения задачи до <strong>23.02.21</strong><span>(осталось 63 часа и 41 минута)</span></p>
-              </div>
-            </article> 
-            <article>
-              <div>
-                <p>Исполнитель приступил к работе</p>
-              </div>
-              <div>
-                <img src="" alt="">
-                <div>
-                  <div>
-                    <p>Информация обновлена 17 минут назад</p>
-                    <p>Отработано по трекеру:<span>3 часа 47 минут</span></p>
+                <div class="progress__body">
+                  <div class="user-card">
+                    <div class="user-card__image element element--user">
+                      <img class="user-card__img" src="img/best-freelancer.jpg" alt="Фото фрилансера">
+                    </div>
+                    <div class="user-card__body">
+                      <h3 class="user-card__name">Алексей Кутюк</h3>
+                      <a class="user-card__text" href="mailto:#hireKytuk@gmail.com">hireKytuk@gmail.com</a>
+                      <p class="user-card__text">3 года в сервисе</p>
+                    </div>
                   </div>
-                  <button>В арбитраж</button>
                 </div>
-                <a href="#">Посмотреть всю активность</a>
-              </div>
-            </article> 
-            <article>
-              <div>
-                <p>Исполнитель закончил работу</p>
-              </div>
-              <div>
-                <p>Материалы отсутствуют</p>
-              </div>
-            </article>
-            <article>
-              <div>
-                <p>Перевод исполнителю</p>
-              </div>
-              <div>
-                <p>Итоговая сумма к оплате</p>
-                <strong>$240.00</strong>
-                <a href="#">Оплатить</a>
-              </div>
-            </article>
-            <article>
-              <div>
-                <p>Отзыв исполнителю</p>
-              </div>
-              <div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Регина..."></textarea>
-                <p>1000 символов</p>
-              </div>
-            </article>
-            <button>Завершить заказ</button>
+              </article> 
+              <article  class="progress__section">
+                <div class="progress__top">
+                  <p class="progress__head section__head">Оговоренные сроки и стоимость работы</p>
+                </div>
+                <div class="progress__body">
+                  <p class="progress__price price">$240.00</p>
+                  <p class="progress__text">Срок выполнения задачи до <strong>23.02.21</strong> <span>(осталось 63 часа и 41 минута)</span></p>
+                </div>
+              </article> 
+              <article class="progress__section">
+                <div class="progress__top">
+                  <p class="progress__head section__head">Исполнитель приступил к работе</p>
+                </div>
+                <div class="progress__body">
+                  <div class="progress__wrap">
+                    <img class="progress__img" src="img/progress_img.jpg" alt="">
+                    <div class="progress__box">
+                      <div class="progress__box">
+                        <div class="progress__info">
+                          <p class="progress__text progress__text--reload">Информация обновлена 17 минут назад</p>
+                          <p class="progress__text progress__text--black">Отработано по трекеру:<span class="progress__time">3 часа 47 минут</span></p>
+                        </div>
+                        <button class="btn btn--long">В арбитраж</button>
+                      </div>
+                      <a class="progress__link" href="#">Посмотреть всю активность</a>
+                    </div>
+                  </div>
+                </div>
+              </article> 
+              <article class="progress__section">
+                <div class="progress__top">
+                  <p class="progress__head progress__head--light section__head">Исполнитель закончил работу</p>
+                </div>
+                <div class="progress__body">
+                  <p class="progress__text">Материалы отсутствуют</p>
+                </div>
+              </article>
+              <article  class="progress__section">
+                <div class="progress__top">
+                  <p class="progress__head progress__head--light section__head">Перевод исполнителю</p>
+                </div>
+                <div class="progress__body">
+                  <p class="section__head section__head--gray">Итоговая сумма к оплате</p>
+                  <strong class="progress__price progress__price--current price">$240.00</strong>
+                  <a class="btn btn-control" href="#">Оплатить</a>
+                </div>
+              </article>
+              <article  class="progress__section">
+                <div class="progress__top">
+                  <p class="progress__head progress__head--light section__head">Отзыв исполнителю</p>
+                </div>
+                <div class="progress__body">
+                  <div class="text-edit text-edit--small">
+                    <div class="text-edit__content">
+                      <textarea class="text-edit__area" cols="30" rows="10" placeholder="Регина..."></textarea>
+                      <p class="text-edit__max-value"><span class="value">1000</span> символов</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <button class="btn btn--long btn--control">Завершить заказ</button>
           </div>
         </div>
       </div>
