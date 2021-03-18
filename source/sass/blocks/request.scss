@@ -3,6 +3,16 @@
     margin-bottom: 30px;
   }
 }
+
+.request--active {
+  .request__control {
+    display: flex;
+  }
+  .request__wrapper {
+    border-color: $blue;
+  }
+}
+
 .request .user-card {
   margin-bottom: 0;
 }
@@ -26,10 +36,6 @@
   }
 }
 
-.request__wrapper--active {
-  border-color: $blue;
-}
-
 .request__body {
   display: flex;
   align-items: center;
@@ -38,6 +44,7 @@
 }
 
 .request__control {
+  display: none;
   margin-left: 20px;
 }
 

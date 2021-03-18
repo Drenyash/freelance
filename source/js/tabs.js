@@ -32,13 +32,25 @@ function goToSlide(slide, trigger) {
   if (trigger == 2) {
     activeTrigger.classList.remove('tab-header__active');
     triggers[1].classList.add('tab-header__active');
+    if (!triggers[1].classList.contains('tab-header__active')) {
+      triggers[1].classList.add('past-element');
+    } else {
+      triggers[1].classList.remove('past-element');
+    }
   } else if (trigger == 3){
     activeTrigger.classList.remove('tab-header__active');
     triggers[2].classList.add('tab-header__active');
+    triggers[trigger-2].classList.add('past-element');
   } else {
     activeTrigger.classList.remove('tab-header__active');
     triggers[trigger].classList.add('tab-header__active');
+    if (!triggers[0].classList.contains('tab-header__active')) {
+      triggers[0].classList.add('past-element');
+    } else {
+      triggers[0].classList.remove('past-element');
+    }
   }
+
   if (slide < 4) {
     activeContent.classList.remove('tab-content__active');
     slides[currentSlide].classList.add('tab-content__active');
