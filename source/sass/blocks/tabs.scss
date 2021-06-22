@@ -73,3 +73,15 @@
   padding-left: 49.5px;
   padding-right: 49.5px;
 }
+
+@media (max-width: 500px) {
+  .tab-control {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 420px) {
+  .next__btn {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}

@@ -8,8 +8,7 @@
 }
 
 .portfolio__list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  display: flex;
   grid-column-gap: 28px;
 }
 
@@ -28,4 +27,14 @@
   line-height: 18px;
   font-weight: 500;
   color: $blue;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio__item {
+  min-width: 150px;
+  margin-bottom: 20px;
 }

@@ -15,7 +15,7 @@
 };
 
 .help__input {
-  padding-right: 45px;
+  padding-right: 55px;
 }
 
 .help__btn {
@@ -46,3 +46,16 @@
   line-height: 21px;
   font-weight: 700;
 };
+
+@media (max-width: 767px) {
+  .help {
+    flex-direction: column;
+  }
+  .help__box {
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+  .help__text {
+    margin-bottom: 20px;
+  }
+}

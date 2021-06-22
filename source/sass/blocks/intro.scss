@@ -23,3 +23,45 @@
   font-size: 24px;
   line-height: 28px;
 };
+
+@media (max-width: 1024px) {
+  .intro__wrapper {
+    background-size: 300px;
+    background-position: top 15% right;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro__header {
+    padding-top: 0;
+  }
+  .intro {
+    padding-bottom: 80px;
+  }
+  .intro__wrapper {
+    background-image: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro__title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .intro__description {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 420px) {
+  .intro__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .intro__description {
+    font-size: 16px;
+  }
+}

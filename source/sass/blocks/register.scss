@@ -6,7 +6,7 @@ html {
   display: flex;
   justify-content: center;
   height: 100%;
-  max-width: 875px;
+  width: calc(100% - 515px);
 }
 
 .register__title {
@@ -151,7 +151,7 @@ html {
 }
 
 .register__login {
-  margin-top: auto;
+  margin-top: 20px;
 }
 
 .register__text {
@@ -300,4 +300,43 @@ html {
 .register-skills {
   width: 100%;
   height: 300px;
+}
+
+@media (max-width: 1200px) {
+  .main--reg .container {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .register {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .register__wrapper {
+    padding-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .register {
+    height: auto;
+  }
+  .register__wrapper {
+    justify-content: center;
+  }
+  .register__login {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .register__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

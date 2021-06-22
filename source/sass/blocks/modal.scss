@@ -62,3 +62,21 @@
 .modal__cancel {
   display: inline-block;
 }
+
+@media (max-width: 1024px) {
+  .modal__wrapper {
+    padding: 25px;
+    margin: 0 10px;
+  }
+  .modal__item   {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  .modal__item   {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}

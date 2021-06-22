@@ -26,3 +26,21 @@
   font-size: 18px;
   line-height: 25px;
 }
+
+@media (max-width: 1024px) {
+  .reviews__wrapper {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .reviews__wrapper {
+    padding: 25px 10px;
+    .section__head {
+      padding: 0 25px;
+    }
+  }
+  .reviews__item {
+    padding: 10px;
+  }
+}

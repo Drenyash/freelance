@@ -86,3 +86,16 @@
   margin: 0 auto;
   margin-top: 52px;
 }
+
+@media (max-width: 1024px) {
+  .promotion__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 500px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar { width: 3px; height: 5px;}
+  &::-webkit-scrollbar-track {  background-color: transparent;}
+  &::-webkit-scrollbar-track-piece { background-color: transparent;}
+  &::-webkit-scrollbar-thumb { height: 50px; background-color: $blue; border-radius: 30px;}
+  }
+}

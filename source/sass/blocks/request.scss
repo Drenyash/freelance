@@ -40,7 +40,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 28px;
+  .user-card {
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 .request__control {
@@ -50,4 +55,19 @@
 
 .request__control--disable {
   display: none;
+}
+
+@media (max-width: 420px) {
+  .request__wrapper {
+    padding: 10px;
+  }
+  .request__body {
+    .user-card {
+      margin-right: 0;
+    }
+  }
+  .request__control {
+    margin-left: 0;
+    justify-content: center;
+  }
 }

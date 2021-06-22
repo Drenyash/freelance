@@ -15,6 +15,7 @@
     margin-right: 32px;
     width: 30px;
     height: 28px;
+    flex-shrink: 0;
     background-image: url('../../img/icons/check_icon.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,6 +52,7 @@
 
 .progress__price {
   margin-bottom: 10px;
+  order: unset;
 }
 
 .progress__price--current {
@@ -78,7 +80,6 @@
 .progress__info {
   display: flex;
   flex-direction: column;
-  margin-right: 60px;
 }
 
 .progress__text--reload {
@@ -103,7 +104,9 @@
 .progress__box {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .progress__link {
@@ -112,4 +115,24 @@
   font-weight: 400;
   color: $textBlack;
   text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .progress__img {
+    display: none;
+  }
+  .progress__link {
+    margin-top: 20px;
+  }
+  .progress__body {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .progress__body {
+    padding-left: 0;
+    &::before {
+      display: none;
+    }
+  }
 }

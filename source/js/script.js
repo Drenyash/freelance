@@ -1,13 +1,23 @@
 const avatar = document.querySelector('.user-nav__link--avatar');
-const userMenu = document.querySelector('.user__menu');
+const menu = document.querySelector('.menu');
 const avatarElement = document.querySelectorAll('.user-nav__item');
+const burger = document.querySelector('.burger');
 
 avatar.addEventListener('click', (evt)=> {
   evt.preventDefault();
-  if (!avatarElement[3].classList.contains('user-nav__item--active')) {
-    avatarElement[3].classList.add('user-nav__item--active');
+  if (menu.style.display != 'block') {
+    menu.style.display = "block";
   } else {
-    avatarElement[3].classList.remove('user-nav__item--active');
+    menu.style.display = "none";
+  }
+})
+
+burger.addEventListener('click', ()=> {
+  burger.classList.toggle('burger--active');
+  if (menu.style.display != 'block') {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
   }
 })
 

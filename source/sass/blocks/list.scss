@@ -32,3 +32,11 @@
     }
   }
 }
+
+@media (max-width: 420px) {
+  .list__item {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}

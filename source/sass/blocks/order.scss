@@ -18,7 +18,42 @@
   display: flex;
 }
 
+.order__select {
+  display: inline-block;
+  padding: 13.5px 20px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $textColor;
+  border: none;
+  background-color: transparent;
+  appearance: none;
+  cursor: pointer;
+}
+
+.order__select-wrapper {
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../../img/icons/Polygon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translateY(-50%);
+  }
+}
+
 .order__header {
+  display: flex;
+  width: 100%;
   margin-bottom: 40px;
 }
 
@@ -122,4 +157,92 @@
 }
 .cancel {
   color: #EA4444;
+}
+
+@media (max-width: 1024px) {
+  .order__list {
+    flex-wrap: wrap;
+  }
+  .order__element {
+    flex-wrap: wrap;
+  }
+  .order__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .order__item {
+    margin-bottom: 10px;
+    .section__heading {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .order {
+    padding: 25px;
+  }
+  .order__header {
+    margin-bottom: 20px;
+  }
+  .order__select-wrapper {
+    display: inline-flex;
+  }
+  .order__list {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .board__title {
+    margin-bottom: 30px;
+  }
+  .order__header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .order__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .order__left {
+    position: relative;
+  }
+  .moderation {
+    position: absolute;
+    top: 38px;
+    right: 0;
+  }
+  .order__text {
+    font-size: 16px;
+  }
+  .order__category {
+    margin-bottom: 10px;
+  }
+  .order__element {
+    padding: 20px;
+  }
+  .order__item {
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .order {
+    padding: 10px;
+  }
+  .order__element {
+    padding: 30px 7px 30px 15px;
+  }
 }

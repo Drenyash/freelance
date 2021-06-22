@@ -16,15 +16,21 @@
   margin-bottom: 80px;
 }
 
+.messages__users {
+  margin-right: 48px;
+  flex-shrink: 0;
+}
+
 .messages__chat {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  width: 846px;
+  width: 100%;
+  max-width: 845px;
+  min-width: 445px;
   height: 813px;
   background: #FFFFFF;
   border: 1px solid #F9F9F9;
-  box-sizing: border-box;
   box-shadow: 0px 7px 10px rgba(191, 191, 191, 0.32);
   border-radius: 10px;
 }
@@ -57,13 +63,15 @@
 
 .messages__link {
   display: block;
-  padding: 30px 20px;
-  width: 384px;
-  height: 163px;
+  padding: 20px;
+  padding-right: 50px;
   background: #FFFFFF;
   border: 1.5px solid #F9F9F9;
   box-shadow: 0px 7px 5px #F5F5F5;
   border-radius: 20px;
+  .user-card {
+    margin-bottom: 0;
+  }
 }
 
 .messages__item {
@@ -109,6 +117,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 64px;
   height: 60px;
   background: #FFFFFF;
@@ -178,5 +187,46 @@
   }
   &:focus {
     outline: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .messages__wrapper {
+    flex-direction: column;
+  }
+  .messages__users {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .messages__list {
+    display: flex;
+    align-items: center;
+  }
+  .messages__item {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  .messages__link {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .messages__chat {
+    padding: 25px;
+    min-width: 100%;
+    p {
+      font-size: 16px;
+    }
+    .messages__time {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+    .message__block {
+      width: 100%;
+    }
+  }
+  .chat__btn {
+    display: none;
   }
 }

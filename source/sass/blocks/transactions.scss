@@ -3,6 +3,8 @@
 }
 
 .transactions__wrapper {
+  width: 100%;
+  flex-wrap: wrap;
   &:not(:last-child) {
     margin-bottom: 60px;
   }
@@ -17,7 +19,10 @@
 }
 
 .operations__element {
-  margin-right: 80px;
+  &:not(:last-child) {
+    margin-right: 80px;
+    margin-bottom: 20px;
+  }
 }
 
 .transactions__list {
@@ -98,11 +103,14 @@
 }
 
 .transactions__cards-text {
+  display: block;
+  margin: 0 auto;
   margin-top: 16px;
   text-align: center;
   font-size: 16px;
   line-height: 19px;
   font-weight: 500;
+  text-align: center;
   color: $textLight;
 }
 
@@ -127,7 +135,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   height: 240px;
 }
 
@@ -180,4 +189,97 @@
 
 .transactions__name {
   margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .transactions__list--top {
+    display: none;
+  }
+  .transactions__top {
+    margin-bottom: 20px;
+  }
+  .transactions__item {
+    margin-bottom: 10px;
+  }
+  .transactions__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .operations__element {
+    margin-right: 0;
+    width: 100%;
+  }
+  .transactions__box {
+    display: flex;
+  }
+  .transactions__input, 
+  .transactions__select {
+    margin-right: 0;
+  }
+  .transactions__input {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 700px) {
+  .transactions__wrapper {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .transactions__list {
+    justify-content: space-between;
+  }
+  .transactions__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .transactions__list {
+    justify-content: center;
+  }
+  .transactions__list--top {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .transactions__top {
+    width: 100%;
+  }
+  .transactions__input {
+    max-width: 100%;
+  }
+  .transactions__card-number {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .transactions__box {
+    flex-direction: column;
+  }
+  .transactions__input {
+    margin-bottom: 20px;
+  }
+  .operations__link {
+    display: block;
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .transactions__list {
+    flex-direction: column;
+    align-items: center;
+  }
 }

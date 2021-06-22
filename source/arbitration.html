@@ -14,12 +14,14 @@
       <div class="header__nav">
         <a class="header__logo logo" href="index.html">Лого.</a>
         <nav class="nav">
-          <a class="nav__item" href="#">О нас</a>
-          <a class="nav__item" href="#">Как это работает?</a>
-          <a class="nav__item" href="#">Примеры</a>
+          <a class="nav__item" href="#">Работа</a>
+          <a class="nav__item" href="#">Исполнители</a>
           <a class="nav__item" href="faq.html">FAQ</a>
         </nav>
         <ul class="user-nav__list user-nav__list--login">
+          <li class="burger element">
+            <span class="burger__item"></span>
+          </li>
           <li class="user-nav__item">
             <a class="user-nav__link user-nav__link--add" href="create-ad.html">
               <span class="addOneMore"></span>
@@ -28,7 +30,7 @@
           <li class="user-nav__item">
             <a class="user-nav__link" href="messages.html">
               <svg class="user-nav__icon" width="31" height="26" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g>
+                <g clip-path="url(#clip0)">
                 <path d="M4.4043 1.23364H20.4043C21.5043 1.23364 22.4043 2.13364 22.4043 3.23364V15.2336C22.4043 16.3336 21.5043 17.2336 20.4043 17.2336H4.4043C3.3043 17.2336 2.4043 16.3336 2.4043 15.2336V3.23364C2.4043 2.13364 3.3043 1.23364 4.4043 1.23364Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M22.4043 3.23364L12.4043 10.2336L2.4043 3.23364" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
@@ -59,29 +61,6 @@
             <a class="user-nav__link user-nav__link--active user-nav__link--avatar" href="profile.html">
               <img src="img/best-freelancer.jpg" alt="">
             </a>
-            <ul class="user__menu menu element">
-              <li class="menu__item">
-                <a class="menu__link" href="">Мои заказы</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="order-list.html">Заявки</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="transactions.html">Транзакции</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="arbitration.html">Арбитраж</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="professional.html">Проф.аккаунт</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="profile.html">Настройка</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">Выход</a>
-              </li>
-            </ul>
           </li>
           <li class="user__item user__item--logout">
             <a class="user-nav__link" href="profile.html">
@@ -92,13 +71,50 @@
             </a>
           </li>
         </ul>
+        <ul class="user__menu menu element">
+          <li class="menu__item menu__item--adaptive">
+            <a class="user-nav__link user-nav__link--active user-nav__link--avatar" href="profile.html">
+              <img src="img/best-freelancer.jpg" alt="">
+            </a>
+          </li>
+          <li class="menu__item menu__item--adaptive">
+            <a class="menu__link menu__link--add" href="">+ Создать проект</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Мои заказы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="order-list.html">Заявки</a>
+          </li>
+          <li class="menu__item menu__item--adaptive">
+            <a class="menu__link" href="order-list.html">Сообщения</a>
+          </li>
+          <li class="menu__item menu__item--adaptive">
+            <a class="menu__link" href="order-list.html">Уведомления</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="transactions.html">Транзакции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="arbitration.html">Арбитраж</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="professional.html">Проф.аккаунт</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="profile.html">Настройка</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Выход</a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
   <main class="main">
     <div class="container">
-      <div class="board__wrapper board__wrapper--big">
-        <h1 class="arbitration__main main-title"><span>Арбитраж -</span><br>Место где решают споры !</h1>
+      <div class="arbitration__box board__wrapper board__wrapper--big">
+        <h1 class="arbitration__main main-title"><span>Арбитраж -</span><br>Место где решают споры!</h1>
         <p class="arbitration__text">Прежде чем начать разрешение спора, ознакомтесь с <a href="#">правилами рассмотрения споров</a></p>
         <strong class="arbitration__text arbitration__text--bold">Если вы уже ознакомились с основными правилами рассмотрения споров и ваш случай попадает под данные правила, то вы имеете право подать заявку на рассмотрение.</strong>
         <article class="arbitration__warning warning">
@@ -115,7 +131,6 @@
         <div class="footer__left">
           <h2 class="footer__title">Freelance Market</h2>
           <p class="footer__text">Платформа на которой вы сможете найти любую работу и любого исполнителя, в любое время суток</p>
-          <div class="copyright">Copyright© 2021</div>
         </div>
         <ul class="footer-nav">
           <li class="footer-nav__header">
@@ -171,6 +186,7 @@
           </li>
         </ul>
       </div>
+      <div class="copyright">Copyright© 2021</div>
     </div>
   </footer>
   <script src="js/script.js"></script>

@@ -1,6 +1,5 @@
 .account {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .account__icon {
@@ -12,16 +11,18 @@
   flex-direction: column;
   padding: 28px 25px;
   margin-bottom: 20px;
-  margin-right: 70px;
+  width: 100%;
   max-width: 312px;
-  min-width: 311px;
-  height: 604px;
+  min-height: 604px;
   background: #FFFFFF;
   border: 1.5px solid #F9F9F9;
   box-sizing: border-box;
   box-shadow: 0px 7px 5px #F5F5F5;
   border-radius: 10px;
   transition: 0.2s;
+  &:not(:last-child) {
+    margin-right: 70px;
+  }
   &:hover {
     background: linear-gradient(180deg, #58CFFF 0%, #00B6FF 100%);
     border: 1.5px solid #F9F9F9;
@@ -48,7 +49,7 @@
 }
 
 .account__item--small {
-  height: 475px;
+  min-height: 475px;
 }
 
 .account__elem {
@@ -122,4 +123,55 @@
 
 .account__list {
   display: flex;
+}
+
+@media (max-width: 1200px) {
+  .professional__block {
+    flex-direction: column;
+  }
+  .account__item--small {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .account-customer {
+    flex-wrap: wrap;
+  }
+  .account__item {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .account__price {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .account__title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .account__item {
+    padding: 20px 15px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .account {
+    flex-direction: column;
+    width: 100%;
+  }
+  .account__item {
+    max-width: 100%;
+    min-height: auto;
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
 }

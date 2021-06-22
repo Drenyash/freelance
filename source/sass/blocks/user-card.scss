@@ -6,6 +6,7 @@
 .user-card__image {
   margin-right: 20px;
   max-width: 100px;
+  flex-shrink: 0;
 }
 .user-card__body {
   display: flex;
@@ -33,11 +34,12 @@
 }
 .user-card__text--mail {
   position: relative;
+  padding-right: 30px;
   &::after {
     content: "";
     position: absolute;
     top: 50%;
-    right: -30px;
+    right: 0;
     display: block;
     width: 23px;
     height: 19px;
@@ -58,5 +60,35 @@
   }
   .user-card__text:last-child {
     margin-top: 2px;
+  }
+}
+
+@media (max-width: 880px) {
+  .user-card {
+    margin-bottom: 10px;
+  }
+  .user-card__image {
+    margin-right: 10px;
+    max-width: 80px;
+  }
+  .user-card__name {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .user-card__text {
+    font-size: 14px;
+    line-height: 16px;
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .user-card__text--mail {
+    &::after {
+      top: -12px;
+      right: 24px;
+    }
   }
 }

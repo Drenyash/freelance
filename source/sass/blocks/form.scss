@@ -1,14 +1,19 @@
+.form {
+  width: 100%;
+}
+
 .form__wrapper {
   display: block;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   border: none;
-  &:not(:last-child) {
-    margin-bottom: 40px;
-  }
+}
+.form__wrapper--category {
+  margin-bottom: 20px;
 }
 .form__wrapper--last {
-  margin-bottom: 0;
+  margin-bottom: 40px;
   .file {
     margin-bottom: 0;
   }
@@ -18,8 +23,13 @@
 }
 
 .form__item {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 360px;
   min-width: 207px;
-  margin-right: 20px;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
 .form__input,
@@ -31,10 +41,12 @@
   }
 }
 
-.form__input--small,
-.form__select--small {
-  max-width: 207px;
-  max-height: 60px;
+.form__item--small {
+  max-width: 207px
+}
+
+.form__input {
+  width: 100%;
 }
 
 .form__input--big {
@@ -73,15 +85,20 @@
 }
 
 .form__select--big {
-  width: 360px;
+  max-width: 360px;
 }
 
 .form__element {
   display: flex;
 }
 
+.form__element--edit {
+  flex-wrap: wrap;
+}
+
 .form-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .form-list__label {
@@ -117,6 +134,10 @@
   }
 }
 
+.form-list__item {
+  margin-bottom: 10px;
+}
+
 .form-list__item > input:checked ~ .form-list__label {
   color: $textColor;
   &::before {
@@ -124,5 +145,11 @@
   }
   &::after {
     display: block;
+  }
+}
+
+@media (max-width: 420px) {
+  .form__control {
+    justify-content: flex-start;
   }
 }

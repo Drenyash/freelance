@@ -7,6 +7,7 @@
   <title>Главная</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
   <header class="header">
@@ -14,12 +15,14 @@
       <div class="header__nav">
         <a class="header__logo logo" href="index.html">Лого.</a>
         <nav class="nav">
-          <a class="nav__item" href="#">О нас</a>
-          <a class="nav__item" href="#">Как это работает?</a>
-          <a class="nav__item" href="#">Примеры</a>
+          <a class="nav__item" href="#">Работа</a>
+          <a class="nav__item" href="#">Исполнители</a>
           <a class="nav__item" href="faq.html">FAQ</a>
         </nav>
         <ul class="user-nav__list user-nav__list--login">
+          <li class="burger element">
+            <span class="burger__item"></span>
+          </li>
           <li class="user-nav__item">
             <a class="user-nav__link user-nav__link--add" href="create-ad.html">
               <span class="addOneMore"></span>
@@ -28,7 +31,7 @@
           <li class="user-nav__item">
             <a class="user-nav__link" href="messages.html">
               <svg class="user-nav__icon" width="31" height="26" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g>
+                <g clip-path="url(#clip0)">
                 <path d="M4.4043 1.23364H20.4043C21.5043 1.23364 22.4043 2.13364 22.4043 3.23364V15.2336C22.4043 16.3336 21.5043 17.2336 20.4043 17.2336H4.4043C3.3043 17.2336 2.4043 16.3336 2.4043 15.2336V3.23364C2.4043 2.13364 3.3043 1.23364 4.4043 1.23364Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M22.4043 3.23364L12.4043 10.2336L2.4043 3.23364" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
@@ -59,29 +62,6 @@
             <a class="user-nav__link user-nav__link--active user-nav__link--avatar" href="profile.html">
               <img src="img/best-freelancer.jpg" alt="">
             </a>
-            <ul class="user__menu menu element">
-              <li class="menu__item">
-                <a class="menu__link" href="">Мои заказы</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="order-list.html">Заявки</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="transactions.html">Транзакции</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="arbitration.html">Арбитраж</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="professional.html">Проф.аккаунт</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="profile.html">Настройка</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">Выход</a>
-              </li>
-            </ul>
           </li>
           <li class="user__item user__item--logout">
             <a class="user-nav__link" href="profile.html">
@@ -90,6 +70,43 @@
                 <path d="M23.7556 25.5333C24.8601 25.5333 25.7556 24.6379 25.7556 23.5333V22.6889C25.7556 21.1801 25.1562 19.7331 24.0893 18.6662C23.0224 17.5994 21.5755 17 20.0667 17H8.68889C7.1801 17 5.73311 17.5994 4.66624 18.6662C3.59936 19.7331 3 21.1801 3 22.6889C3 22.6889 3 22.0333 3 23.5333C3 25 4.66624 25.5333 5 25.5333C5.5 25.5333 23.1361 25.5333 23.7556 25.5333Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </a>
+          </li>
+        </ul>
+        <ul class="user__menu menu element">
+          <li class="menu__item menu__item--adaptive">
+            <a class="user-nav__link user-nav__link--active user-nav__link--avatar" href="profile.html">
+              <img src="img/best-freelancer.jpg" alt="">
+            </a>
+          </li>
+          <li class="menu__item menu__item--adaptive">
+            <a class="menu__link menu__link--add" href="">+ Создать проект</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Мои заказы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="order-list.html">Заявки</a>
+          </li>
+          <li class="menu__item menu__item--adaptive">
+            <a class="menu__link" href="order-list.html">Сообщения</a>
+          </li>
+          <li class="menu__item menu__item--adaptive">
+            <a class="menu__link" href="order-list.html">Уведомления</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="transactions.html">Транзакции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="arbitration.html">Арбитраж</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="professional.html">Проф.аккаунт</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="profile.html">Настройка</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Выход</a>
           </li>
         </ul>
       </div>
@@ -106,7 +123,7 @@
                 <div class="user__image element element--user">
                   <img src="img/best-freelancer.jpg" alt="">
                 </div>
-                <a class="btn btn--profile" href="editProfile.html">Редактировать профиль</a>
+                <a class="user__btn--header btn btn--profile" href="editProfile.html">Редактировать профиль</a>
               </div>
               <div class="user__info">
                 <div class="user__left">
@@ -156,7 +173,19 @@
                     <img class="portfolio__image" src="img/portfolio_4.jpg" alt="">
                   </a>
                 </div>
+                <div class="portfolio__item">
+                  <a class="portfolio__link" href="#">
+                    <img class="portfolio__image" src="img/portfolio_4.jpg" alt="">
+                  </a>
+                </div>
+                <div class="portfolio__item">
+                  <a class="portfolio__link" href="#">
+                    <img class="portfolio__image" src="img/portfolio_4.jpg" alt="">
+                  </a>
+                </div>
               </div>
+              <div class="slider__btn slider__btn--right"></div>
+              <div class="slider__btn slider__btn--left"></div>
             </section>
             <section class="profile-about">
               <h3 class="section__head">Обо мне</h3>
@@ -174,6 +203,7 @@
                   <li class="list__item section__text">Менее чем за год доросла до уровня сеньора</li>
                 </ul>
             </section>
+            <a class="user__btn--footer btn btn--profile" href="editProfile.html">Редактировать профиль</a>
           </div>
         </div>
       </div>
@@ -226,7 +256,6 @@
         <div class="footer__left">
           <h2 class="footer__title">Freelance Market</h2>
           <p class="footer__text">Платформа на которой вы сможете найти любую работу и любого исполнителя, в любое время суток</p>
-          <div class="copyright">Copyright© 2021</div>
         </div>
         <ul class="footer-nav">
           <li class="footer-nav__header">
@@ -282,8 +311,52 @@
           </li>
         </ul>
       </div>
+      <div class="copyright">Copyright© 2021</div>
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.portfolio__list').slick({
+      infinite: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      prevArrow: $('.slider__btn--left'),
+      nextArrow: $('.slider__btn--right'),
+      responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 420,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 391,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+    });
+  </script>
 </body>
 </html>

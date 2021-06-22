@@ -92,3 +92,9 @@
   font-weight: 400;
   color: $textLight;
 }
+
+@media (max-width: 600px) {
+  .portfilio__preview__wrapper {
+    margin-bottom: 50px;
+  }
+}

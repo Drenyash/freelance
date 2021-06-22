@@ -14,12 +14,14 @@
       <div class="header__nav">
         <a class="header__logo logo" href="index.html">Лого.</a>
         <nav class="nav">
-          <a class="nav__item" href="#">О нас</a>
-          <a class="nav__item" href="#">Как это работает?</a>
-          <a class="nav__item" href="#">Примеры</a>
+          <a class="nav__item" href="#">Работа</a>
+          <a class="nav__item" href="#">Исполнители</a>
           <a class="nav__item" href="faq.html">FAQ</a>
         </nav>
         <ul class="user-nav__list user-nav__list--login">
+          <li class="burger element">
+            <span class="burger__item"></span>
+          </li>
           <li class="user-nav__item">
             <a class="user-nav__link user-nav__link--add" href="create-ad.html">
               <span class="addOneMore"></span>
@@ -28,7 +30,7 @@
           <li class="user-nav__item">
             <a class="user-nav__link" href="messages.html">
               <svg class="user-nav__icon" width="31" height="26" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g>
+                <g clip-path="url(#clip0)">
                 <path d="M4.4043 1.23364H20.4043C21.5043 1.23364 22.4043 2.13364 22.4043 3.23364V15.2336C22.4043 16.3336 21.5043 17.2336 20.4043 17.2336H4.4043C3.3043 17.2336 2.4043 16.3336 2.4043 15.2336V3.23364C2.4043 2.13364 3.3043 1.23364 4.4043 1.23364Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M22.4043 3.23364L12.4043 10.2336L2.4043 3.23364" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
@@ -59,29 +61,6 @@
             <a class="user-nav__link user-nav__link--active user-nav__link--avatar" href="profile.html">
               <img src="img/best-freelancer.jpg" alt="">
             </a>
-            <ul class="user__menu menu element">
-              <li class="menu__item">
-                <a class="menu__link" href="">Мои заказы</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="order-list.html">Заявки</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="transactions.html">Транзакции</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="arbitration.html">Арбитраж</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="professional.html">Проф.аккаунт</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="profile.html">Настройка</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">Выход</a>
-              </li>
-            </ul>
           </li>
           <li class="user__item user__item--logout">
             <a class="user-nav__link" href="profile.html">
@@ -92,13 +71,50 @@
             </a>
           </li>
         </ul>
+        <ul class="user__menu menu element">
+          <li class="menu__item menu__item--adaptive">
+            <a class="user-nav__link user-nav__link--active user-nav__link--avatar" href="profile.html">
+              <img src="img/best-freelancer.jpg" alt="">
+            </a>
+          </li>
+          <li class="menu__item menu__item--adaptive">
+            <a class="menu__link menu__link--add" href="">+ Создать проект</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Мои заказы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="order-list.html">Заявки</a>
+          </li>
+          <li class="menu__item menu__item--adaptive">
+            <a class="menu__link" href="order-list.html">Сообщения</a>
+          </li>
+          <li class="menu__item menu__item--adaptive">
+            <a class="menu__link" href="order-list.html">Уведомления</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="transactions.html">Транзакции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="arbitration.html">Арбитраж</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="professional.html">Проф.аккаунт</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="profile.html">Настройка</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Выход</a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
   <main class="main">
     <div class="container">
       <div class="board__wrapper">
-        <h1 class="professional__title main-title"><span>Аккаун</span><br>Для чего нужен ?</h1>
+        <h1 class="professional__title main-title"><span>Аккаун</span><br>Для чего нужен?</h1>
         <p class="professional__text section__text">Для того что бы работать с заказчиками, вам нужен аккаунт, это вроде “пропуска” к заказам.<br><span class="professional__text--bold">При оплате 2х месяцев – 3й идет в подарок.</span></p>
         <div>
           <h3 class="section__head">Ваш аккаунт</h3>
@@ -107,7 +123,7 @@
             <div class="professional__top">
               <h3 class="section__head">Выберите подходящий аккаунт</h3>
             </div>
-            <div class="account">
+            <div class="account professional__account">
               <article class="account__item">
                 <h3 class="visually-hidden">Покупка услуги проф.аккаунта</h3>
                 <div class="account__top">
@@ -156,13 +172,6 @@
                   <a class="account__btn" href="#">Купить</a>
                 </div>
               </article>
-            </div>
-          </div>
-          <div class="professional__block">
-            <div class="professional__top">
-              <h3 class="section__head">Бонусная программа</h3>
-            </div>
-            <div class="account">
               <article class="account__item">
                 <h3 class="visually-hidden">Покупка услуги проф.аккаунта</h3>
                 <div class="account__top">
@@ -197,6 +206,13 @@
                   <a class="account__btn" href="#">Купить</a>
                 </div>
               </article>
+            </div>
+          </div>
+          <div class="professional__block">
+            <div class="professional__top">
+              <h3 class="section__head">Бонусная программа</h3>
+            </div>
+            <div class="professional__account account">
               <article class="account__item">
                 <h3 class="visually-hidden">Покупка услуги проф.аккаунта</h3>
                 <div class="account__top">
@@ -222,7 +238,34 @@
                 </div>
                 <div class="account__body">
                   <p class="account__text">Предоставление исходных файлов проектов команде FLmedia, получение «сертифицирован (проверен) командой FLmedia”.</p>
-                  <p class="account__text">- 200р/мес Доступ к новым заданиям раньше остальных: все видят новые задания с задержкой на 4 минуты</p>
+                  <a class="account__btn" href="#">Купить</a>
+                </div>
+              </article>
+              <article class="account__item">
+                <h3 class="visually-hidden">Покупка услуги проф.аккаунта</h3>
+                <div class="account__top">
+                  <ul class="account__list">
+                    <li class="account__elem">
+                      <svg class="account__icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5925 14.5477C19.2737 14.8566 19.1272 15.3034 19.1998 15.7415L20.294 21.7969C20.3863 22.3102 20.1697 22.8295 19.7402 23.1262C19.3192 23.4339 18.7592 23.4708 18.3002 23.2246L12.8491 20.3815C12.6595 20.2806 12.4491 20.2265 12.2337 20.2203H11.9002C11.7845 20.2375 11.6712 20.2745 11.5678 20.3311L6.11554 23.1877C5.846 23.3231 5.54077 23.3711 5.24169 23.3231C4.51308 23.1852 4.02692 22.4911 4.14631 21.7588L5.24169 15.7034C5.31431 15.2615 5.16785 14.8123 4.84908 14.4985L0.40477 10.1908C0.0330779 9.83015 -0.0961528 9.28862 0.0736933 8.8C0.238616 8.31262 0.659539 7.95692 1.16785 7.87692L7.28477 6.98954C7.75 6.94154 8.15862 6.65846 8.36785 6.24L11.0632 0.713846C11.1272 0.590769 11.2097 0.477539 11.3094 0.381539L11.4202 0.295385C11.478 0.231385 11.5445 0.178462 11.6183 0.135385L11.7525 0.0861539L11.9617 0H12.4798C12.9426 0.048 13.35 0.324923 13.5629 0.738462L16.294 6.24C16.4909 6.64246 16.8737 6.92185 17.3155 6.98954L23.4325 7.87692C23.9494 7.95077 24.3814 8.30769 24.5525 8.8C24.7137 9.29354 24.5746 9.83508 24.1955 10.1908L19.5925 14.5477Z"/>
+                      </svg>
+                    </li>
+                    <li class="account__elem">
+                      <svg class="account__icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5925 14.5477C19.2737 14.8566 19.1272 15.3034 19.1998 15.7415L20.294 21.7969C20.3863 22.3102 20.1697 22.8295 19.7402 23.1262C19.3192 23.4339 18.7592 23.4708 18.3002 23.2246L12.8491 20.3815C12.6595 20.2806 12.4491 20.2265 12.2337 20.2203H11.9002C11.7845 20.2375 11.6712 20.2745 11.5678 20.3311L6.11554 23.1877C5.846 23.3231 5.54077 23.3711 5.24169 23.3231C4.51308 23.1852 4.02692 22.4911 4.14631 21.7588L5.24169 15.7034C5.31431 15.2615 5.16785 14.8123 4.84908 14.4985L0.40477 10.1908C0.0330779 9.83015 -0.0961528 9.28862 0.0736933 8.8C0.238616 8.31262 0.659539 7.95692 1.16785 7.87692L7.28477 6.98954C7.75 6.94154 8.15862 6.65846 8.36785 6.24L11.0632 0.713846C11.1272 0.590769 11.2097 0.477539 11.3094 0.381539L11.4202 0.295385C11.478 0.231385 11.5445 0.178462 11.6183 0.135385L11.7525 0.0861539L11.9617 0H12.4798C12.9426 0.048 13.35 0.324923 13.5629 0.738462L16.294 6.24C16.4909 6.64246 16.8737 6.92185 17.3155 6.98954L23.4325 7.87692C23.9494 7.95077 24.3814 8.30769 24.5525 8.8C24.7137 9.29354 24.5746 9.83508 24.1955 10.1908L19.5925 14.5477Z"/>
+                      </svg>
+                    </li>
+                    <li class="account__elem">
+                      <svg class="account__icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5925 14.5477C19.2737 14.8566 19.1272 15.3034 19.1998 15.7415L20.294 21.7969C20.3863 22.3102 20.1697 22.8295 19.7402 23.1262C19.3192 23.4339 18.7592 23.4708 18.3002 23.2246L12.8491 20.3815C12.6595 20.2806 12.4491 20.2265 12.2337 20.2203H11.9002C11.7845 20.2375 11.6712 20.2745 11.5678 20.3311L6.11554 23.1877C5.846 23.3231 5.54077 23.3711 5.24169 23.3231C4.51308 23.1852 4.02692 22.4911 4.14631 21.7588L5.24169 15.7034C5.31431 15.2615 5.16785 14.8123 4.84908 14.4985L0.40477 10.1908C0.0330779 9.83015 -0.0961528 9.28862 0.0736933 8.8C0.238616 8.31262 0.659539 7.95692 1.16785 7.87692L7.28477 6.98954C7.75 6.94154 8.15862 6.65846 8.36785 6.24L11.0632 0.713846C11.1272 0.590769 11.2097 0.477539 11.3094 0.381539L11.4202 0.295385C11.478 0.231385 11.5445 0.178462 11.6183 0.135385L11.7525 0.0861539L11.9617 0H12.4798C12.9426 0.048 13.35 0.324923 13.5629 0.738462L16.294 6.24C16.4909 6.64246 16.8737 6.92185 17.3155 6.98954L23.4325 7.87692C23.9494 7.95077 24.3814 8.30769 24.5525 8.8C24.7137 9.29354 24.5746 9.83508 24.1955 10.1908L19.5925 14.5477Z"/>
+                      </svg>
+                    </li>
+                  </ul>
+                  <p class="account__title">Бонус профи +</p>
+                  <p class="account__price">200 р/месяц</p>
+                </div>
+                <div class="account__body">
+                  <p class="account__text">Доступ к новым заданиям раньше остальных: все видят новые задания с задержкой на 4 минуты</p>
                   <a class="account__btn" href="#">Купить</a>
                 </div>
               </article>
@@ -238,7 +281,6 @@
         <div class="footer__left">
           <h2 class="footer__title">Freelance Market</h2>
           <p class="footer__text">Платформа на которой вы сможете найти любую работу и любого исполнителя, в любое время суток</p>
-          <div class="copyright">Copyright© 2021</div>
         </div>
         <ul class="footer-nav">
           <li class="footer-nav__header">
@@ -294,6 +336,7 @@
           </li>
         </ul>
       </div>
+      <div class="copyright">Copyright© 2021</div>
     </div>
   </footer>
   <script src="js/script.js"></script>

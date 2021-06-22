@@ -1,0 +1,32 @@
+.slider {
+  position: relative;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	border: 1px solid #F5F5F5;
+	box-shadow: 0px 7px 10px rgba(191, 191, 191, 0.32);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slider__btn--right {
+  background-image: url('../../img/icons/chevron_big_right.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: -10px;
+}
+
+.slider__btn--left {
+  background-image: url('../../img/icons/chevron_big_right.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: -10px;
+  transform: rotate(180deg);
+}

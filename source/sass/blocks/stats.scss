@@ -5,30 +5,10 @@
   margin-top: 25px;
   padding: 0;
   list-style: none;
-  background: #FFFFFF;
-  border: 1.5px solid #D2D2D2;
-  box-sizing: border-box;
-  box-shadow: 0px 7px 5px #F5F5F5;
-  border-radius: 10px;
 }
 
 .stats__item {
-  position: relative;
   display: block;
-  padding: 26px 18px;
-  width: 25%;
-  &:not(:last-child) {
-    &::after {
-      content: "";
-      position: absolute;
-      top: -1px;
-      right: 0;
-      display: block;
-      width: 1.5px;
-      height: 102%;
-      background-color: $textLight;
-    }
-  }
 }
 
 .stats__title {
@@ -43,4 +23,20 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
 }

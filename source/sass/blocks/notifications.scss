@@ -13,6 +13,7 @@
 
 .notifications__wrapper {
   margin-bottom: 42px;
+  width: 100%;
 }
 
 .notifications__head {
@@ -25,11 +26,12 @@
 
 .notifications__item {
   margin-bottom: 12px;
+  max-width: 360px;
 }
 
 .notifications__link {
   display: block;
-  width: 360px;
+  width: 100%;
   padding: 27.5px 30px;
   font-size: 18px;
   line-height: 25px;
@@ -43,5 +45,38 @@
     border: 1.5px solid #0076CB;
     box-shadow: 0px 4px 25px rgba(0, 118, 203, 0.35);
     color: $textColor;
+  }
+}
+
+@media (max-width: 600px) {
+  .notifications__title {
+    margin-bottom: 20px;
+  }
+  .notifications__link {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .notifications__wrapper {
+    margin-bottom: 20px;
+  }
+  .notifications__link {
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .notifications__title {
+    margin-bottom: 10px;
+  }
+  .notifications__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .notifications__head {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 22px;
   }
 }

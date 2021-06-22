@@ -42,3 +42,29 @@
   line-height: 21px;
   font-weight: 400;
 }
+
+@media (max-width: 1024px) {
+  .advantages .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 880px) {
+  .advantages__list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 20px;
+  }
+  .advantages__icon {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages {
+    padding: 40px 0;
+  }
+  .advantages__header {
+    margin-bottom: 30px;
+  }
+}
