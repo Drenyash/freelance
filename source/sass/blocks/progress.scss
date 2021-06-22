@@ -16,7 +16,7 @@
     width: 30px;
     height: 28px;
     flex-shrink: 0;
-    background-image: url('../../img/icons/check_icon.svg');
+    background-image: url('../img/icons/check_icon.svg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -25,7 +25,7 @@
 .progress__head--light {
   color: $textLight;
   &::before {
-    background-image: url('../../img/icons/check_icon-gray.svg');
+    background-image: url('../img/icons/check_icon-gray.svg');
   }
 }
 
